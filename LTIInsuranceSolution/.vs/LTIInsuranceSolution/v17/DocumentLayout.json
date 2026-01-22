@@ -1,0 +1,61 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Project\\LTIInsuranceSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{20D35D55-196D-4314-9B08-A2FFC0A0E274}|LTIInsuranceTest\\LTIInsuranceTest.csproj|c:\\project\\ltiinsurancesolution\\ltiinsurancetest\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20D35D55-196D-4314-9B08-A2FFC0A0E274}|LTIInsuranceTest\\LTIInsuranceTest.csproj|solutionrelative:ltiinsurancetest\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC325ACF-4304-4BAF-A4B3-487AB97AB779}|LTIInsurance\\LTIInsurance.csproj|c:\\project\\ltiinsurancesolution\\ltiinsurance\\models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{CC325ACF-4304-4BAF-A4B3-487AB97AB779}|LTIInsurance\\LTIInsurance.csproj|solutionrelative:ltiinsurance\\models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Project\\LTIInsuranceSolution\\LTIInsuranceTest\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "LTIInsuranceTest\\UnitTest1.cs",
+              "ToolTip": "C:\\Project\\LTIInsuranceSolution\\LTIInsuranceTest\\UnitTest1.cs",
+              "RelativeToolTip": "LTIInsuranceTest\\UnitTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T04:10:04.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Model1.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Project\\LTIInsuranceSolution\\LTIInsurance\\Models\\Model1.edmx",
+              "RelativeDocumentMoniker": "LTIInsurance\\Models\\Model1.edmx",
+              "ToolTip": "C:\\Project\\LTIInsuranceSolution\\LTIInsurance\\Models\\Model1.edmx [Diagram1]",
+              "RelativeToolTip": "LTIInsurance\\Models\\Model1.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2026-01-22T04:09:11.056Z",
+              "EditorCaption": " [Diagram1]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
