@@ -1,0 +1,48 @@
+﻿@model InsureGo_MVC.Models.ViewModels.InsuranceViewModel
+
+@using (Html.BeginForm("SelectPlan", "Insurance", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+    <h2>Select Insurance Plan</h2>
+
+    <hr />
+
+    <p><strong>Vehicle Type:</strong> @Model.VehicleType</p>
+    <p><strong>Vehicle Model:</strong> @Model.VehicleModel</p>
+    <p><strong>Registration Number:</strong> @Model.RegistrationNumber</p>
+
+    @Html.HiddenFor(m => m.VehicleType)
+    @Html.HiddenFor(m => m.VehicleModel)
+    @Html.HiddenFor(m => m.RegistrationNumber)
+
+    <hr />
+
+    <div class="form-group">
+        <label>Plan Type</label><br />
+
+        @Html.RadioButtonFor(m => m.PlanType, "Third Party")
+        <span>Third Party Insurance</span><br />
+
+        @Html.RadioButtonFor(m => m.PlanType, "Comprehensive")
+        <span>Comprehensive Insurance</span>
+
+        @Html.ValidationMessageFor(m => m.PlanType)
+    </div>
+
+    <div class="form-group">
+        <label>Duration (Years)</label>
+        @Html.DropDownListFor(m => m.Duration,
+            new SelectList(new[] { 1, 2, 3, 4, 5 }),
+            "Select Duration",
+            new { @class = "form-control" })
+
+        @Html.ValidationMessageFor(m => m.Duration)
+    </div>
+
+    <br />
+    <button type="submit" class="btn btn-success">
+        Proceed to Payment
+    </button>
+}

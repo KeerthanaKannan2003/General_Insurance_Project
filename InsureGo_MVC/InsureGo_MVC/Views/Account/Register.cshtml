@@ -1,0 +1,60 @@
+﻿@model InsureGo_MVC.Models.ViewModels.RegisterViewModel
+@{
+    ViewBag.Title = "Register";
+}
+
+<h2>Register</h2>
+
+@if (ViewBag.Error != null)
+{
+    <div style="color:red">@ViewBag.Error</div>
+}
+
+@using (Html.BeginForm("Register", "Account", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div>
+        @Html.LabelFor(m => m.FullName)
+        @Html.TextBoxFor(m => m.FullName)
+        @Html.ValidationMessageFor(m => m.FullName)
+    </div>
+
+    <div>
+        @Html.LabelFor(m => m.EmailId)
+        @Html.TextBoxFor(m => m.EmailId)
+        @Html.ValidationMessageFor(m => m.EmailId)
+    </div>
+
+    <div>
+        @Html.LabelFor(m => m.ContactNumber)
+        @Html.TextBoxFor(m => m.ContactNumber)
+        @Html.ValidationMessageFor(m => m.ContactNumber)
+    </div>
+
+    <div>
+        @Html.LabelFor(m => m.DateOfBirth)
+        @Html.TextBoxFor(m => m.DateOfBirth, "{0:yyyy-MM-dd}", new { type = "date" })
+        @Html.ValidationMessageFor(m => m.DateOfBirth)
+    </div>
+
+    <div>
+        @Html.LabelFor(m => m.Address)
+        @Html.TextAreaFor(m => m.Address)
+        @Html.ValidationMessageFor(m => m.Address)
+    </div>
+
+    <div>
+        @Html.LabelFor(m => m.Password)
+        @Html.PasswordFor(m => m.Password)
+        @Html.ValidationMessageFor(m => m.Password)
+    </div>
+
+    <div>
+        <input type="submit" value="Register" />
+    </div>
+
+    <div>
+        @Html.ActionLink("Login", "Login", "Account")
+    </div>
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f2ec93a5de30491fb5da8dee763a867a" Name="Diagram1">
+        <EntityTypeShape EntityType="InsureGoDBModel.Claim" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsureGoDBModel.InsurancePlan" Width="1.5" PointX="0.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsureGoDBModel.InsuranceType" Width="1.5" PointX="0.75" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsureGoDBModel.Payment" Width="1.5" PointX="5.25" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsureGoDBModel.Policy" Width="1.5" PointX="3" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsureGoDBModel.PolicyDuration" Width="1.5" PointX="0.75" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsureGoDBModel.PremiumRate" Width="1.5" PointX="10" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsureGoDBModel.User" Width="1.5" PointX="0.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsureGoDBModel.Vehicle" Width="1.5" PointX="0.75" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsureGoDBModel.VehicleType" Width="1.5" PointX="7.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsureGoDBModel.ClaimHistory" Width="1.5" PointX="2.75" PointY="7.75" IsExpanded="true" />
+        <AssociationConnector Association="InsureGoDBModel.FK__Claims__PolicyId__571DF1D5" ManuallyRouted="false" />
+        <AssociationConnector Association="InsureGoDBModel.FK__Policies__PlanId__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="InsureGoDBModel.FK__Policies__Insura__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="InsureGoDBModel.FK__Payments__Policy__534D60F1" ManuallyRouted="false" />
+        <AssociationConnector Association="InsureGoDBModel.FK__Policies__Durati__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="InsureGoDBModel.FK__Policies__UserId__48CFD27E" ManuallyRouted="false" />
+        <AssociationConnector Association="InsureGoDBModel.FK__Policies__Vehicl__4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="InsureGoDBModel.FK__PremiumRa__Vehic__4F7CD00D" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

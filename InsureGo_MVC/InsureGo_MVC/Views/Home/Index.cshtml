@@ -2,6 +2,7 @@
     ViewBag.Title = "Home Page";
 }
 
+<<<<<<< HEAD
 <main>
     <section class="row" aria-labelledby="aspnetTitle">
         <h1 id="title">ASP.NET</h1>
@@ -31,3 +32,83 @@
         </section>
     </div>
 </main>
+=======
+<!-- 1️⃣ HEADER -->
+<h2>Hi @Session["UserName"] 👋</h2>
+<a href="/Account/Logout">Logout</a>
+
+<!-- 2️⃣ ACTION CARDS (ALWAYS VISIBLE) -->
+<section class="grid">
+    <div class="card">
+        <h2>Buy Insurance</h2>
+        <p>Motor or Travel—choose plan and duration.</p>
+        <a class="btn" href="@Url.Action("Buy","Insurance")">Start</a>
+    </div>
+
+    <div class="card">
+        <h2>Renew Insurance</h2>
+        <p>Enter your policy number and renew instantly.</p>
+        <a class="btn" href="@Url.Action("Renew","Insurance")">Renew</a>
+    </div>
+
+    <div class="card">
+        <h2>Estimate Premium</h2>
+        <p>Quick premium calculator for 2W/4W.</p>
+        <a class="btn" href="@Url.Action("Calculate","Premium")">Calculate</a>
+    </div>
+
+    <div class="card">
+        <h2>Claim Insurance</h2>
+        <p>Submit claim reason and track status.</p>
+        <a class="btn" href="@Url.Action("Create","Claim")">Claim</a>
+    </div>
+</section>
+
+<!-- 3️⃣ SUCCESS MESSAGE (AFTER PAYMENT) -->
+@if (ViewBag.Success != null)
+{
+    <div class="alert alert-success">
+        <h4>@ViewBag.Success</h4>
+
+        @if (ViewBag.PolicyNumber != null)
+        {
+            <p><strong>Policy Number:</strong> @ViewBag.PolicyNumber</p>
+        }
+    </div>
+}
+
+<!-- 4️⃣ YOUR POLICIES (ONLY IF USER HAS POLICIES) -->
+@if (ViewBag.Policies != null && ViewBag.Policies.Count > 0)
+{
+    <hr />
+    <h2>Your Policies</h2>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Policy Number</th>
+                <th>Vehicle Model</th>
+                <th>Registration Number</th>
+                <th>Plan Type</th>
+                <th>Duration</th>
+                <th>Premium</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var p in ViewBag.Policies)
+            {
+                <tr>
+                    <td>@p.PolicyNumber</td>
+                    <td>@p.VehicleModel</td>
+                    <td>@p.RegistrationNumber</td>
+                    <td>@p.PlanType</td>
+                    <td>@p.Duration</td>
+                    <td>@p.PremiumAmount</td>
+                    <td>@p.PolicyStatus</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+>>>>>>> 9c8b818 (initial commit)
