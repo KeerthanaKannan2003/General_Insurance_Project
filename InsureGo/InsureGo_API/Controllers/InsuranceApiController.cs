@@ -1,37 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using InsureGo_API.Models;
 using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
-using InsureGo_API.Models;
-using InsureGo_API.Repository;
-namespace InsureGo_API.Controllers
+
+namespace InsureGo_API.Api.Controllers
 {
- 
     [RoutePrefix("api/insurance")]
-    public class InsuranceApiController : ApiController
+    public class InsuranceController : ApiController
     {
         InsureGoDBEntities db = new InsureGoDBEntities();
 
-        // Add vehicle
-        [HttpPost, Route("addvehicle")]
-        public IHttpActionResult AddVehicle(Vehicle vehicle)
-        {
-            db.Vehicles.Add(vehicle);
-            db.SaveChanges();
-            return Ok(vehicle.VehicleId);
-        }
-
-        // Create policy
-        [HttpPost, Route("createpolicy")]
+        // Create a new insurance policy
+        [HttpPost]
+        [Route("createpolicy")]  // POST api/insurance/createpolicy
         public IHttpActionResult CreatePolicy(Policy policy)
         {
+            if (policy == null)
+                return BadRequest("Invalid policy data");
+
             policy.PolicyStatus = "Active";
             db.Policies.Add(policy);
             db.SaveChanges();
+
             return Ok(policy.PolicyId);
         }
-    }
 
+        // Get all policies
+        [HttpGet]
+        [Route("all")]  // GET api/insurance/all
+        public IHttpActionResult GetPolicies()
+        {
+            var policies = db.Policies.ToList();
+            return Ok(policies);
+        }
+    }
 }

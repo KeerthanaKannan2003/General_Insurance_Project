@@ -94,6 +94,7 @@
     <Property Name="EngineNumber" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="ChassisNumber" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="VehicleTypeId" Type="int" />
   </EntityType>
   <EntityType Name="VehicleTypes">
     <Key>
@@ -210,6 +211,18 @@ warning 6002: The table/view 'InsureGoDB.dbo.ClaimHistory' does not have a prima
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_Vehicles_VehicleTypes">
+    <End Role="VehicleTypes" Type="Self.VehicleTypes" Multiplicity="0..1" />
+    <End Role="Vehicles" Type="Self.Vehicles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VehicleTypes">
+        <PropertyRef Name="VehicleTypeId" />
+      </Principal>
+      <Dependent Role="Vehicles">
+        <PropertyRef Name="VehicleTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Function Name="CalculatePremium" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="VehicleTypeId" Type="int" Mode="In" />
     <Parameter Name="VehicleAge" Type="int" Mode="In" />
@@ -268,6 +281,10 @@ warning 6002: The table/view 'InsureGoDB.dbo.ClaimHistory' does not have a prima
     <AssociationSet Name="FK__PremiumRa__Vehic__4F7CD00D" Association="Self.FK__PremiumRa__Vehic__4F7CD00D">
       <End Role="VehicleTypes" EntitySet="VehicleTypes" />
       <End Role="PremiumRates" EntitySet="PremiumRates" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vehicles_VehicleTypes" Association="Self.FK_Vehicles_VehicleTypes">
+      <End Role="VehicleTypes" EntitySet="VehicleTypes" />
+      <End Role="Vehicles" EntitySet="Vehicles" />
     </AssociationSet>
   </EntityContainer>
 </Schema>

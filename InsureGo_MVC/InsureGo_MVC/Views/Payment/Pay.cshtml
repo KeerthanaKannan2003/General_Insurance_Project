@@ -1,18 +1,8 @@
-﻿@model InsureGo_MVC.Models.ViewModels.PaymentViewModel
-
-@using (Html.BeginForm())
-{
-    @Html.AntiForgeryToken()
-
-    <h2>Payment</h2>
-
-    <div>
-        <label>Amount</label>
-        @Html.TextBoxFor(m => m.Amount, new { @readonly = "readonly" })
-    </div>
-
-    <br />
-    <button type="submit" class="btn btn-success">
-        Pay Now
-    </button>
+﻿@{
+    ViewBag.Title = "Payment";
 }
+
+<h2>Payment</h2>
+<p>Vehicle and plan selected. Redirect to payment gateway.</p>
+
+@* Later you can integrate Razorpay / PayPal / Stripe here *@

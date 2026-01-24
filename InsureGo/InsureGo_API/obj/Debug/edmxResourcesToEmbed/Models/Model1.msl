@@ -93,6 +93,7 @@
     <EntitySetMapping Name="Vehicles">
       <EntityTypeMapping TypeName="InsureGoDBModel.Vehicle">
         <MappingFragment StoreEntitySet="Vehicles">
+          <ScalarProperty Name="VehicleTypeId" ColumnName="VehicleTypeId" />
           <ScalarProperty Name="VehicleId" ColumnName="VehicleId" />
           <ScalarProperty Name="Manufacturer" ColumnName="Manufacturer" />
           <ScalarProperty Name="Model" ColumnName="Model" />

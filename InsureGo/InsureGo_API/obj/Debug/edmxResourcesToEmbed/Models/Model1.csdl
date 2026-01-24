@@ -109,6 +109,8 @@
     <Property Name="ChassisNumber" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="CreatedDate" Type="DateTime" Precision="3" />
     <NavigationProperty Name="Policies" Relationship="Self.FK__Policies__Vehicl__4AB81AF0" FromRole="Vehicles" ToRole="Policies" />
+    <Property Name="VehicleTypeId" Type="Int32" />
+    <NavigationProperty Name="VehicleType" Relationship="InsureGoDBModel.FK_Vehicles_VehicleTypes" FromRole="Vehicle" ToRole="VehicleType" />
   </EntityType>
   <EntityType Name="VehicleType">
     <Key>
@@ -117,6 +119,7 @@
     <Property Name="VehicleTypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="VehicleTypeName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
     <NavigationProperty Name="PremiumRates" Relationship="Self.FK__PremiumRa__Vehic__4F7CD00D" FromRole="VehicleTypes" ToRole="PremiumRates" />
+    <NavigationProperty Name="Vehicles" Relationship="InsureGoDBModel.FK_Vehicles_VehicleTypes" FromRole="VehicleType" ToRole="Vehicle" />
   </EntityType>
   <EntityType Name="ClaimHistory">
     <Key>
@@ -275,5 +278,21 @@
     <FunctionImport Name="RenewPolicy">
       <Parameter Name="OldPolicyNumber" Mode="In" Type="String" />
     </FunctionImport>
+    <AssociationSet Name="FK_Vehicles_VehicleTypes" Association="InsureGoDBModel.FK_Vehicles_VehicleTypes">
+      <End Role="VehicleType" EntitySet="VehicleTypes" />
+      <End Role="Vehicle" EntitySet="Vehicles" />
+    </AssociationSet>
   </EntityContainer>
+  <Association Name="FK_Vehicles_VehicleTypes">
+    <End Type="InsureGoDBModel.VehicleType" Role="VehicleType" Multiplicity="0..1" />
+    <End Type="InsureGoDBModel.Vehicle" Role="Vehicle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VehicleType">
+        <PropertyRef Name="VehicleTypeId" />
+      </Principal>
+      <Dependent Role="Vehicle">
+        <PropertyRef Name="VehicleTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>

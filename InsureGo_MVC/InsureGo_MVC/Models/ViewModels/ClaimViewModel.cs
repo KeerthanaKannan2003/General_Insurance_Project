@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -14,4 +15,3 @@ namespace InsureGo_MVC.Models.ViewModels
         public decimal? Amount { get; set; }
     }
 }
-

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿
+using System.ComponentModel.DataAnnotations;
 namespace InsureGo_MVC.Models.ViewModels
 {
     public class LoginViewModel

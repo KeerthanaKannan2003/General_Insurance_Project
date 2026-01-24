@@ -21,10 +21,5 @@ namespace InsureGo_API.Models
         public string PaymentStatus { get; set; }
     
         public virtual Policy Policy { get; set; }
-        public int? VehicleId { get; internal set; }
-        public int? UserId { get; internal set; }
-        public int? InsuranceTypeId { get; internal set; }
-        public int? PlanId { get; internal set; }
-        public int? DurationId { get; internal set; }
     }
 }

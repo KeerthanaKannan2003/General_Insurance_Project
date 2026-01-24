@@ -29,9 +29,11 @@ namespace InsureGo_API.Models
         public string EngineNumber { get; set; }
         public string ChassisNumber { get; set; }
         public Nullable<System.DateTime> CreatedDate { get; set; }
+        public Nullable<int> VehicleTypeId { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Policy> Policies { get; set; }
+        public virtual VehicleType VehicleType { get; set; }
         public object VehicleModel { get; internal set; }
     }
 }

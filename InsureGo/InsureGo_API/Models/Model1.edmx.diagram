@@ -24,6 +24,7 @@
         <AssociationConnector Association="InsureGoDBModel.FK__Policies__UserId__48CFD27E" ManuallyRouted="false" />
         <AssociationConnector Association="InsureGoDBModel.FK__Policies__Vehicl__4AB81AF0" ManuallyRouted="false" />
         <AssociationConnector Association="InsureGoDBModel.FK__PremiumRa__Vehic__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="InsureGoDBModel.FK_Vehicles_VehicleTypes" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

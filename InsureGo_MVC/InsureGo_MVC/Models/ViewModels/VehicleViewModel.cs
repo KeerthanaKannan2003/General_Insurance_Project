@@ -6,7 +6,7 @@ namespace InsureGo_MVC.Models.ViewModels
     public class VehicleViewModel
     {
         [Required]
-        public string VehicleType { get; set; }   // 2W / 4W
+        public string VehicleType { get; set; }
 
         [Required]
         public string Manufacturer { get; set; }

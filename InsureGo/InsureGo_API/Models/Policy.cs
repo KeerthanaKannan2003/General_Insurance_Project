@@ -42,6 +42,6 @@ namespace InsureGo_API.Models
         public virtual PolicyDuration PolicyDuration { get; set; }
         public virtual User User { get; set; }
         public virtual Vehicle Vehicle { get; set; }
-        public object Duration { get; internal set; }
+        public int Duration { get; internal set; }
     }
 }

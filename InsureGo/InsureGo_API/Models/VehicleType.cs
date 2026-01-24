@@ -18,6 +18,7 @@ namespace InsureGo_API.Models
         public VehicleType()
         {
             this.PremiumRates = new HashSet<PremiumRate>();
+            this.Vehicles = new HashSet<Vehicle>();
         }
     
         public int VehicleTypeId { get; set; }
@@ -25,5 +26,7 @@ namespace InsureGo_API.Models
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<PremiumRate> PremiumRates { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Vehicle> Vehicles { get; set; }
     }
 }
