@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InsureGo_Test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+46ff42f476fceedb8f8706661733b6d9e42d39a9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+60c1c03d8b48b6db1309c1bb452fd85be6fe6835")]
 [assembly: System.Reflection.AssemblyProductAttribute("InsureGo_Test")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InsureGo_Test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

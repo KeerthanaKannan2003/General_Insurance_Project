@@ -1,43 +1,60 @@
 ﻿@model InsureGo_MVC.Models.ViewModels.InsuranceViewModel
+
 @{
     ViewBag.Title = "Select Insurance Plan";
 }
 
-<h2>Select Insurance Plan</h2>
+<div class="container mt-5">
+    <h2>Select Insurance Plan</h2>
 
-@using (Html.BeginForm("SelectPlan", "Insurance", FormMethod.Post, new { @class = "form-horizontal" }))
-{
-    @Html.AntiForgeryToken()
+    @using (Html.BeginForm("SelectPlan", "Insurance", FormMethod.Post, new { @class = "form-horizontal" }))
+    {
+        @Html.AntiForgeryToken()
 
-    <div class="form-group">
-        @Html.Label("Vehicle Type")
-        <input type="text" class="form-control" value="@Model.VehicleType" readonly />
-    </div>
+        <!-- Vehicle Type -->
+        <div class="form-group">
+            @Html.Label("Vehicle Type")
+            <input type="text" class="form-control"
+                   name="VehicleType"
+                   value="@Model.VehicleType"
+                   placeholder="e.g. 2W or 4W" />
+        </div>
 
-    <div class="form-group">
-        @Html.Label("Vehicle Model")
-        <input type="text" class="form-control" value="@Model.VehicleModel" readonly />
-    </div>
+        <!-- Vehicle Model -->
+        <div class="form-group">
+            @Html.Label("Vehicle Model")
+            <input type="text" class="form-control"
+                   name="VehicleModel"
+                   value="@Model.VehicleModel"
+                   placeholder="e.g. Honda Activa, Maruti Swift" />
+        </div>
 
-    <div class="form-group">
-        @Html.Label("Registration Number")
-        <input type="text" class="form-control" value="@Model.RegistrationNumber" readonly />
-    </div>
+        <!-- Registration Number -->
+        <div class="form-group">
+            @Html.Label("Registration Number")
+            <input type="text" class="form-control"
+                   name="RegistrationNumber"
+                   value="@Model.RegistrationNumber"
+                   placeholder="e.g. TS09AB1234" />
+        </div>
 
-    <div class="form-group">
-        @Html.LabelFor(m => m.PlanType)
-        @Html.DropDownListFor(m => m.PlanType,
-            new SelectList(new[] { "Third Party", "Comprehensive" }),
-            "Select Plan",
-            new { @class = "form-control" })
-        @Html.ValidationMessageFor(m => m.PlanType)
-    </div>
+        <!-- Plan Type -->
+        <div class="form-group">
+            @Html.LabelFor(m => m.PlanType)
+            @Html.DropDownListFor(m => m.PlanType,
+                new SelectList(new[] { "Third Party", "Comprehensive" }),
+                "Select Plan",
+                new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.PlanType, "", new { @class = "text-danger" })
+        </div>
 
-    <div class="form-group">
-        @Html.LabelFor(m => m.Duration)
-        @Html.TextBoxFor(m => m.Duration, new { @class = "form-control", type = "number", min = "1", max = "5" })
-        @Html.ValidationMessageFor(m => m.Duration)
-    </div>
+        <!-- Duration -->
+        <div class="form-group">
+            @Html.LabelFor(m => m.Duration)
+            @Html.TextBoxFor(m => m.Duration, new { @class = "form-control", type = "number", min = "1", max = "5", placeholder = "e.g. 1 to 5 years" })
+            @Html.ValidationMessageFor(m => m.Duration, "", new { @class = "text-danger" })
+        </div>
 
-    <button type="submit" class="btn btn-success">Next: Payment</button>
-}
+        <button type="submit" class="btn btn-success">Next: Payment</button>
+    }
+</div>

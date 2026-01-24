@@ -1,4 +1,5 @@
-﻿using InsureGo_API.Models;
+﻿
+using InsureGo_API.Models;
 using System;
 using System.Linq;
 using System.Web.Http;
@@ -6,7 +7,7 @@ using InsureGo_API.Repository;
 namespace InsureGo_API.Api.Controllers
 {
     [RoutePrefix("api/insurance")]
-    public class InsuranceApiController : ApiController
+    public class PolicyApiController : ApiController
     {
         InsureGoDBEntities db = new InsureGoDBEntities();
 

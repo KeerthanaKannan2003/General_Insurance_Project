@@ -5,4 +5,10 @@
 <h2>Payment</h2>
 <p>Vehicle and plan selected. Redirect to payment gateway.</p>
 
-@* Later you can integrate Razorpay / PayPal / Stripe here *@
+<script type="text/javascript">
+    window.onload = function () {
+        alert("Payment process started. Redirecting to gateway...");
+        // After clicking OK, redirect to Home/Index
+        window.location.href = '@Url.Action("Index", "Home")';
+    };
+</script>

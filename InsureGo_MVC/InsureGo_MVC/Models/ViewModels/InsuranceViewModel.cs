@@ -5,6 +5,9 @@ namespace InsureGo_MVC.Models.ViewModels
 {
     public class InsuranceViewModel
     {
+        internal int PolicyId;
+        internal string PolicyNumber;
+
         // Auto-filled from vehicle step
         public string VehicleType { get; set; }
         public string VehicleModel { get; set; }

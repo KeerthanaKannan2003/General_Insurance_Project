@@ -8,6 +8,7 @@ namespace InsureGo_MVC.Controllers
 {
     public class VehicleController : Controller
     {
+        // Replace with your actual Web API base URL and port
         private readonly string VEHICLE_API = "https://localhost:44365/api/vehicle/";
 
         // GET: Add Vehicle
@@ -18,7 +19,8 @@ namespace InsureGo_MVC.Controllers
         }
 
         // POST: Add Vehicle
-        [HttpPost, ValidateAntiForgeryToken]
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<ActionResult> Add(VehicleViewModel vehicle)
         {
             if (!ModelState.IsValid)
@@ -30,13 +32,13 @@ namespace InsureGo_MVC.Controllers
             var apiVehicle = new
             {
                 VehicleTypeId = vehicleTypeId,
-                vehicle.Manufacturer,
-                vehicle.VehicleModel,
-                vehicle.DrivingLicence,
-                vehicle.PurchaseDate,
-                vehicle.RegistrationNumber,
-                vehicle.EngineNumber,
-                vehicle.ChassisNumber
+                Manufacturer = vehicle.Manufacturer,
+                Model = vehicle.VehicleModel,                // ✅ matches DB column
+                DrivingLicenseNumber = vehicle.DrivingLicence, // ✅ matches DB column
+                PurchaseDate = vehicle.PurchaseDate,
+                RegistrationNumber = vehicle.RegistrationNumber,
+                EngineNumber = vehicle.EngineNumber,
+                ChassisNumber = vehicle.ChassisNumber
             };
 
             using (HttpClient client = new HttpClient())
@@ -45,21 +47,16 @@ namespace InsureGo_MVC.Controllers
 
                 // Call API
                 var response = await client.PostAsJsonAsync("add", apiVehicle);
-                string apiResult = await response.Content.ReadAsStringAsync();
 
-                // Check for errors
                 if (!response.IsSuccessStatusCode)
                 {
-                    ModelState.AddModelError("", "API Error: " + apiResult);
+                    string apiError = await response.Content.ReadAsStringAsync();
+                    ModelState.AddModelError("", "API Error: " + apiError);
                     return View(vehicle);
                 }
 
-                // Parse VehicleId returned from API
-                if (!int.TryParse(apiResult, out int vehicleId))
-                {
-                    ModelState.AddModelError("", "API did not return a valid VehicleId.");
-                    return View(vehicle);
-                }
+                // ✅ Deserialize VehicleId correctly
+                var vehicleId = await response.Content.ReadAsAsync<int>();
 
                 // Save Vehicle info in session
                 vehicle.VehicleId = vehicleId;

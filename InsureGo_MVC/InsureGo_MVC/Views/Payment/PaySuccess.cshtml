@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Payment Success";
+    var successMessage = TempData["Success"] as string;
+    var policyNumber = TempData["PolicyNumber"] as string;
+}
+
+<h2>@successMessage</h2>
+
+<script type="text/javascript">
+    window.onload = function () {
+        alert("Your Policy Number is: @policyNumber");
+    };
+</script>
+
+<div class="alert alert-success mt-3">
+    <strong>Policy Number:</strong> @policyNumber
+</div>

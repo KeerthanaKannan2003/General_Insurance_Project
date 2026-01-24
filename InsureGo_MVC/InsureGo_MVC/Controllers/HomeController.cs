@@ -43,5 +43,10 @@ namespace InsureGo_MVC.Controllers
         {
             return View();
         }
+        public ActionResult Help() => View(); 
+        public ActionResult FAQ() => View();
+        public ActionResult Home() => View();
+        public ActionResult Error() => View();
+        public ActionResult Contact() => View();
     }
 }
