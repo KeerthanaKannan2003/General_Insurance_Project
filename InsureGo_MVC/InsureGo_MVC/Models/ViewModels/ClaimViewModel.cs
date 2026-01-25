@@ -1,17 +1,20 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace InsureGo_MVC.Models.ViewModels
 {
-    public class ClaimViewModel
+    public class ClaimInsuranceViewModel
     {
-        public int ClaimId { get; set; }
+        [Required]
+        [Display(Name = "Policy Number")]
         public string PolicyNumber { get; set; }
-        public string ClaimStatus { get; set; }
-        public decimal? Amount { get; set; }
+
+        [Required]
+        [Display(Name = "Mobile Number")]
+        public string MobileNumber { get; set; }
+
+        [Required]
+        [Display(Name = "Reason for Claim")]
+        public string ClaimReason { get; set; }
     }
+
 }

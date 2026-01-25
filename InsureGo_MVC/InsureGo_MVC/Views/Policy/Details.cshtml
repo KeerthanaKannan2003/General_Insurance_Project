@@ -1,0 +1,47 @@
+﻿@model InsureGo_MVC.Models.ViewModels.PolicyViewModel
+
+@{
+    ViewBag.Title = "Policy Details";
+}
+
+<h2>Policy Details</h2>
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.Error
+    </div>
+}
+else
+{
+    <table class="table table-bordered">
+        <tr>
+            <th>Policy Number</th>
+            <td>@Model.PolicyNumber</td>
+        </tr>
+        <tr>
+            <th>Vehicle Model</th>
+            <td>@Model.VehicleModel</td>
+        </tr>
+        <tr>
+            <th>Registration Number</th>
+            <td>@Model.RegistrationNumber</td>
+        </tr>
+        <tr>
+            <th>Premium Amount</th>
+            <td>₹ @Model.PremiumAmount</td>
+        </tr>
+        <tr>
+            <th>Status</th>
+            <td>
+                <span class="badge badge-success">
+                    @Model.PolicyStatus
+                </span>
+            </td>
+        </tr>
+    </table>
+}
+
+<a href="@Url.Action("Index", "Home")" class="btn btn-primary">
+    Go to Dashboard
+</a>

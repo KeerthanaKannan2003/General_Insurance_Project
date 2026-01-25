@@ -1,0 +1,42 @@
+﻿@model InsureGo_MVC.Models.ViewModels.PremiumViewModel
+@{
+    ViewBag.Title = "Calculate Premium";
+}
+
+<h2>Premium Calculator</h2>
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">@TempData["Success"]</div>
+}
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">@ViewBag.Error</div>
+}
+
+@using (Html.BeginForm("Calculate", "Premium", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div>
+        <label>Vehicle Type</label><br />
+        @Html.RadioButtonFor(m => m.VehicleTypeId, 1) 2-Wheeler<br />
+        @Html.RadioButtonFor(m => m.VehicleTypeId, 2) 4-Wheeler
+    </div>
+
+    <div>
+        @Html.LabelFor(m => m.VehicleAge)
+        @Html.TextBoxFor(m => m.VehicleAge, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.VehicleAge)
+    </div>
+
+    <div>
+        <input type="submit" value="Calculate Premium" class="btn btn-primary" />
+    </div>
+
+    if (Model.PremiumAmount > 0)
+    {
+        <h4>Premium Amount: @Model.PremiumAmount</h4>
+    }
+}

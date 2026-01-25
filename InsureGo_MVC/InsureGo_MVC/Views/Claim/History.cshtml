@@ -1,0 +1,45 @@
+﻿@model IEnumerable<InsureGo_MVC.Models.ViewModels.ClaimViewModel>
+
+@{
+    ViewBag.Title = "Claim History";
+}
+
+<h2 style="color:darkblue;">Claim History</h2>
+
+@if (ViewBag.Error != null)
+{
+    <div style="color:red; margin-bottom:10px;">
+        @ViewBag.Error
+    </div>
+}
+
+@if (!Model.Any())
+{
+    <div>No claims found.</div>
+}
+else
+{
+    <table class="table table-bordered" style="margin-top:10px;">
+        <thead style="background-color:#f2f2f2;">
+            <tr>
+                <th>Claim ID</th>
+                <th>Policy Number</th>
+                <th>Claim Amount</th>
+                <th>Reason</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var claim in Model)
+            {
+                <tr>
+                    <td>@claim.ClaimId</td>
+                    <td>@claim.PolicyNumber</td>
+                    <td>@claim.ClaimAmount?.ToString("C")</td>
+                    <td>@claim.Reason</td>
+                    <td>@claim.ClaimStatus</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

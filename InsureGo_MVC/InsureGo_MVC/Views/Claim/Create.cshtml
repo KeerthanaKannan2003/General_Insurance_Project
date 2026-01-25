@@ -1,0 +1,37 @@
+﻿@model InsureGo_MVC.Models.ViewModels.ClaimInsuranceViewModel
+
+@{
+    ViewBag.Title = "Claim Insurance";
+}
+
+<h2>Claim Insurance</h2>
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">@ViewBag.Error</div>
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.PolicyNumber)
+        @Html.TextBoxFor(m => m.PolicyNumber, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.PolicyNumber)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.MobileNumber)
+        @Html.TextBoxFor(m => m.MobileNumber, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.MobileNumber)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.ClaimReason)
+        @Html.TextAreaFor(m => m.ClaimReason, new { @class = "form-control", rows = 3 })
+        @Html.ValidationMessageFor(m => m.ClaimReason)
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit Claim</button>
+}

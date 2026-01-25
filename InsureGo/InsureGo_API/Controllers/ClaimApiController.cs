@@ -17,11 +17,29 @@ namespace InsureGo_API.Controllers
 
         [HttpPost]
         [Route("raise")]
-        public IHttpActionResult RaiseClaim(Claim claim)
+        public IHttpActionResult RaiseClaim(dynamic data)
         {
+            string policyNumber = data.PolicyNumber;
+            string mobileNumber = data.MobileNumber;
+            string claimReason = data.ClaimReason;
+
+            var policy = repo.GetPolicyByNumberAndMobile(policyNumber, mobileNumber);
+
+            if (policy == null)
+                return BadRequest("Invalid Policy Details");
+
+            Claim claim = new Claim
+            {
+                PolicyId = policy.PolicyId,
+                ClaimReason = claimReason,
+                ClaimDate = DateTime.Now,
+                ClaimStatus = "Pending"
+            };
+
             repo.RaiseClaim(claim);
-            return Ok("Claim Raised");
+            return Ok("Claim Raised Successfully");
         }
+
 
         [HttpGet]
         [Route("history/{policyId}")]

@@ -35,6 +35,9 @@ namespace InsureGo_API.Repository
         // ---------- Claim ----------
         void RaiseClaim(Claim claim);
         List<ClaimHistory> GetClaimHistory(int policyId);
+
+        Policy GetPolicyByNumberAndMobile(string policyNumber, string mobile);
+
     }
 
 }

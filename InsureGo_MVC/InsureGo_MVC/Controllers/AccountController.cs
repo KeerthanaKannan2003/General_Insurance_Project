@@ -130,26 +130,26 @@ namespace InsureGo_MVC.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult ResetPassword(ResetPasswordViewModel model)
         {
+            ViewBag.Captcha = Session["FP_Captcha"];
+
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
             if (model.Captcha != Session["FP_Captcha"]?.ToString())
             {
                 ViewBag.Error = "Invalid Captcha";
-                ViewBag.Captcha = Session["FP_Captcha"];
                 return View(model);
             }
 
-            if (model.NewPassword != model.ConfirmPassword)
-            {
-                ViewBag.Error = "Passwords do not match";
-                ViewBag.Captcha = Session["FP_Captcha"];
-                return View(model);
-            }
-
-            // ⚠️ API for reset password not implemented
-            // Demo flow: redirect to Login
+            // ✅ Demo success flow
             Session.Remove("FP_Email");
             Session.Remove("FP_Captcha");
+
             TempData["Success"] = "Password reset successful! Please login.";
             return RedirectToAction("Login");
         }

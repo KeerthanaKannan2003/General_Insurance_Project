@@ -1,58 +1,42 @@
 ﻿using InsureGo_MVC.Models.ViewModels;
+using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+using System.Net.Http;
+using System.Text;
 using System.Web.Mvc;
 
-namespace InsureGo_MVC.Controllers
+public class ClaimController : Controller
 {
-    public class ClaimController : Controller
+    private readonly string API = "https://localhost:44365/api/claim/";
+
+    [HttpGet]
+    public ActionResult Create()
     {
-        // ===================== CREATE CLAIM =====================
-        [HttpGet]
-        public ActionResult Create()
+        return View();
+    }
+
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public ActionResult Create(ClaimInsuranceViewModel model)
+    {
+        if (!ModelState.IsValid)
+            return View(model);
+
+        using (HttpClient client = new HttpClient())
         {
-            return View(new ClaimViewModel());
-        }
+            var json = JsonConvert.SerializeObject(model);
+            var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create(ClaimViewModel model)
-        {
-            try
+            var response = client.PostAsync(API + "raise", content).Result;
+
+            if (!response.IsSuccessStatusCode)
             {
-                if (!ModelState.IsValid)
-                    return View(model);
-
-                // TODO: Lookup PolicyId by PolicyNumber via API
-                // TODO: Insert into Claims table via API
-
-                TempData["Success"] = "Claim submitted. Our team will contact you.";
-                return RedirectToAction("History");
-            }
-            catch (Exception ex)
-            {
-                ViewBag.Error = "Error submitting claim: " + ex.Message;
+                ViewBag.Error = "Invalid policy details or claim failed.";
                 return View(model);
             }
         }
 
-        // ===================== CLAIM HISTORY =====================
-        [HttpGet]
-        public ActionResult History()
-        {
-            try
-            {
-                // TODO: Query ClaimHistory via API and pass to view
-                var claims = new List<ClaimViewModel>(); // Replace with API data
-
-                return View(claims);
-            }
-            catch (Exception ex)
-            {
-                ViewBag.Error = "Error loading claim history: " + ex.Message;
-                return View(new List<ClaimViewModel>());
-            }
-        }
+        TempData["Success"] = "Claim submitted successfully";
+        return RedirectToAction("Index", "Home");
     }
 }

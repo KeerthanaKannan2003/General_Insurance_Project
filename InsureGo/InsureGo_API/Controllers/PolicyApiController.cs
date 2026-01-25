@@ -1,9 +1,8 @@
-﻿
-using InsureGo_API.Models;
+﻿using InsureGo_API.Models;
 using System;
 using System.Linq;
 using System.Web.Http;
-using InsureGo_API.Repository;
+
 namespace InsureGo_API.Api.Controllers
 {
     [RoutePrefix("api/insurance")]
@@ -11,8 +10,11 @@ namespace InsureGo_API.Api.Controllers
     {
         InsureGoDBEntities db = new InsureGoDBEntities();
 
-        // Add Vehicle
-        [HttpPost, Route("addvehicle")]
+        // =========================
+        // ADD VEHICLE
+        // =========================
+        [HttpPost]
+        [Route("addvehicle")]
         public IHttpActionResult AddVehicle(Vehicle vehicle)
         {
             if (vehicle == null)
@@ -20,28 +22,63 @@ namespace InsureGo_API.Api.Controllers
 
             db.Vehicles.Add(vehicle);
             db.SaveChanges();
+
             return Ok(vehicle.VehicleId);
         }
 
-        // Create Policy (without generating PolicyNumber here)
+        // =========================
+        // POLICY NUMBER GENERATOR
+        // =========================
+        private string GeneratePolicyNumber()
+        {
+            string year = DateTime.Now.Year.ToString();
+
+            int lastId = db.Policies
+                           .OrderByDescending(p => p.PolicyId)
+                           .Select(p => p.PolicyId)
+                           .FirstOrDefault();
+
+            return $"POL-{year}-{(lastId + 1).ToString("D6")}";
+        }
+
+        // =========================
+        // CREATE POLICY
+        // =========================
         [HttpPost]
         [Route("createpolicy")]
         public IHttpActionResult CreatePolicy(Policy policy)
         {
-            if (policy == null || policy.Duration == null)
+            if (policy == null)
                 return BadRequest("Invalid policy data");
 
+            var duration = db.PolicyDurations
+                             .FirstOrDefault(d => d.DurationId == policy.DurationId);
+
+            if (duration == null || duration.DurationYears == null)
+                return BadRequest("Invalid duration");
+
             policy.StartDate = DateTime.Now;
-            policy.EndDate = DateTime.Now.AddYears((int)policy.Duration);
-            policy.PolicyStatus = "Pending";
+            policy.EndDate = policy.StartDate.Value
+                             .AddYears(duration.DurationYears.Value);
+
+            policy.PolicyStatus = "Active";
+
+            // ✅ SAFE policy number
+            policy.PolicyNumber = GeneratePolicyNumber();
 
             db.Policies.Add(policy);
             db.SaveChanges();
 
-            return Ok(policy.PolicyId);
+            return Ok(new
+            {
+                policy.PolicyId,
+                policy.PolicyNumber
+            });
         }
 
-
+        // =========================
+        // GET USER POLICIES
+        // =========================
         [HttpGet]
         [Route("userpolicies/{userId}")]
         public IHttpActionResult GetUserPolicies(int userId)
@@ -50,10 +87,8 @@ namespace InsureGo_API.Api.Controllers
                 from p in db.Policies
                 join v in db.Vehicles on p.VehicleId equals v.VehicleId into pv
                 from v in pv.DefaultIfEmpty()
-
                 join plan in db.InsurancePlans on p.PlanId equals plan.PlanId
                 join dur in db.PolicyDurations on p.DurationId equals dur.DurationId
-
                 where p.UserId == userId
                 select new
                 {
@@ -69,5 +104,29 @@ namespace InsureGo_API.Api.Controllers
             return Ok(policies.ToList());
         }
 
+        // =========================
+        // GET POLICY BY NUMBER (for Details page)
+        // =========================
+        [HttpGet]
+        [Route("policy/{policyNumber}")]
+        public IHttpActionResult GetPolicyByNumber(string policyNumber)
+        {
+            var policy = db.Policies
+                .Where(p => p.PolicyNumber == policyNumber)
+                .Select(p => new
+                {
+                    p.PolicyNumber,
+                    VehicleModel = p.Vehicle.VehicleModel,
+                    p.Vehicle.RegistrationNumber,
+                    p.PremiumAmount,
+                    p.PolicyStatus
+                })
+                .FirstOrDefault();
+
+            if (policy == null)
+                return NotFound();
+
+            return Ok(policy);
+        }
     }
 }

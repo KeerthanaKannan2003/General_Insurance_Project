@@ -1,5 +1,24 @@
-﻿@{
-    ViewBag.Title = "ValidateTicket";
-}
+﻿@model IEnumerable<dynamic>
 
-<h2>ValidateTicket</h2>
+<h2>Validate Tickets</h2>
+
+<table class="table">
+    <tr>
+        <th>Ticket ID</th>
+        <th>Action</th>
+    </tr>
+
+    @foreach (var t in Model)
+    {
+        <tr>
+            <td>@t.TicketId</td>
+            <td>
+                @using (Html.BeginForm("ValidateTicket", "Admin", FormMethod.Post))
+                {
+                    <input type="hidden" name="ticketId" value="@t.TicketId" />
+                    <button class="btn btn-primary">Validate</button>
+                }
+            </td>
+        </tr>
+    }
+</table>

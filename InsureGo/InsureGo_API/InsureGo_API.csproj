@@ -173,7 +173,6 @@
     <Compile Include="Controllers\AccountApiController.cs" />
     <Compile Include="Controllers\ClaimApiController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\InsuranceApiController.cs" />
     <Compile Include="Controllers\PaymentApiController.cs" />
     <Compile Include="Controllers\PolicyApiController.cs" />
     <Compile Include="Controllers\PremiumApiController.cs" />
@@ -319,6 +318,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Insurance\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\bootstrap.min.js.map" />

@@ -1,9 +1,9 @@
-﻿﻿<h2>Admin Dashboard</h2>
+﻿<h2>Admin Dashboard</h2>
 
-<p>Welcome, @Session["AdminUsername"]!</p>
+<p>Welcome, @Session["Admin"]!</p>
 
 <p>Pending Tickets: @ViewBag.PendingTickets</p>
 <p>Pending Claims: @ViewBag.PendingClaims</p>
 
-<a href="@Url.Action("ValidateTicket")">Validate Tickets</a> |
-<a href="@Url.Action("Logout")">Logout</a>
+<a href="@Url.Action("ValidateTicket", "Admin")">Validate Tickets</a> |
+<a href="@Url.Action("Logout", "Admin")">Logout</a>

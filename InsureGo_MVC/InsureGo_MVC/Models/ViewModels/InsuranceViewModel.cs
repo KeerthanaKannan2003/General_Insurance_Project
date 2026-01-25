@@ -20,5 +20,7 @@ namespace InsureGo_MVC.Models.ViewModels
         [Required(ErrorMessage = "Select duration")]
         [Range(1, 5, ErrorMessage = "Duration must be 1–5 years")]
         public int Duration { get; set; }
+        public object PlanId { get; internal set; }
+        public object DurationId { get; internal set; }
     }
 }

@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Data;
-using System.Data.SqlClient;
+using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Mvc;
 using InsureGo_MVC.Models.ViewModels;
@@ -9,6 +8,8 @@ namespace InsureGo_MVC.Controllers
 {
     public class PremiumController : Controller
     {
+        private string apiUrl = "https://localhost:44365/api/premium"; // Your API base URL
+
         [HttpGet]
         public ActionResult Calculate()
         {
@@ -19,32 +20,34 @@ namespace InsureGo_MVC.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Calculate(PremiumViewModel model)
         {
+            if (!ModelState.IsValid)
+                return View(model);
+
             try
             {
-                if (!ModelState.IsValid)
-                    return View(model);
-
-                // Example ADO.NET call to SP CalculatePremium
-                using (var con = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["InsureGoDb"].ConnectionString))
-                using (var cmd = new SqlCommand("CalculatePremium", con))
+                using (var client = new HttpClient())
                 {
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@VehicleTypeId", model.VehicleTypeId);
-                    cmd.Parameters.AddWithValue("@VehicleAge", model.VehicleAge);
+                    string url = $"{apiUrl}/calculate/{model.VehicleTypeId}/{model.VehicleAge}";
+                    var response = await client.GetAsync(url);
 
-                    await con.OpenAsync();
-                    var result = await cmd.ExecuteScalarAsync();
-                    model.PremiumAmount = (result != null) ? Convert.ToDecimal(result) : 0;
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var premium = await response.Content.ReadAsAsync<decimal>();
+                        model.PremiumAmount = premium;
+                        TempData["Success"] = "Premium calculated successfully!";
+                    }
+                    else
+                    {
+                        ViewBag.Error = "Failed to calculate premium from API";
+                    }
                 }
-
-                TempData["Success"] = "Premium calculated successfully!";
-                return View(model);
             }
             catch (Exception ex)
             {
-                ViewBag.Error = "Error calculating premium: " + ex.Message;
-                return View(model);
+                ViewBag.Error = "Error: " + ex.Message;
             }
+
+            return View(model);
         }
     }
 }

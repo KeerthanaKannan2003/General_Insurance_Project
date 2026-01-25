@@ -20,5 +20,6 @@ namespace InsureGo_API.Models
         public string ClaimStatus { get; set; }
         public Nullable<decimal> ClaimAmount { get; set; }
         public int PolicyId { get; internal set; }
+        public string ClaimReason { get; internal set; }
     }
 }

@@ -31,5 +31,6 @@ namespace InsureGo_API.Models
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Policy> Policies { get; set; }
+        public string MobileNumber { get; internal set; }
     }
 }

@@ -1,27 +1,54 @@
-﻿using System;
+﻿using InsureGo_MVC.Models.ViewModels;
+using Newtonsoft.Json;
+using System;
+using System.Net.Http;
+using System.Threading.Tasks;
 using System.Web.Mvc;
-using InsureGo_MVC.Models.ViewModels;
 
 namespace InsureGo_MVC.Controllers
 {
     public class PolicyController : Controller
     {
+        // ✅ CORRECT BASE URL
+        private readonly string INSURANCE_API = "https://localhost:44365/api/insurance/";
+
+        // ============================
+        // POLICY DETAILS PAGE
+        // ============================
         [HttpGet]
-        public ActionResult Details(string id)
+        public async Task<ActionResult> Details(string id)
         {
+            if (string.IsNullOrEmpty(id))
+                return RedirectToAction("Index", "Home");
+
             try
             {
-                // TODO: Replace these dummy values with real API call to fetch policy by PolicyNumber
-                var vm = new PolicyViewModel
+                using (HttpClient client = new HttpClient())
                 {
-                    PolicyNumber = id,
-                    VehicleModel = "—",        // Replace with API data
-                    RegistrationNumber = "—",  // Replace with API data
-                    PremiumAmount = 0,         // Replace with API data
-                    PolicyStatus = "Active"    // Replace with API data
-                };
+                    // ✅ CALLS: api/insurance/policy/{policyNumber}
+                    var response = await client.GetAsync(INSURANCE_API + "policy/" + id);
 
-                return View(vm);
+                    if (!response.IsSuccessStatusCode)
+                    {
+                        ViewBag.Error = "Policy not found";
+                        return View();
+                    }
+
+                    var json = await response.Content.ReadAsStringAsync();
+
+                    var data = JsonConvert.DeserializeObject<dynamic>(json);
+
+                    var vm = new PolicyViewModel
+                    {
+                        PolicyNumber = data.PolicyNumber,
+                        VehicleModel = data.VehicleModel,
+                        RegistrationNumber = data.RegistrationNumber,
+                        PremiumAmount = (decimal)data.PremiumAmount,
+                        PolicyStatus = data.PolicyStatus
+                    };
+
+                    return View(vm);
+                }
             }
             catch (Exception ex)
             {

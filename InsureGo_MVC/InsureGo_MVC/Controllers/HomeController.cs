@@ -9,13 +9,14 @@ namespace InsureGo_MVC.Controllers
     public class HomeController : Controller
     {
         private readonly string POLICY_API = "https://localhost:44365/api/insurance/";
+        private readonly string CLAIM_API = "https://localhost:44365/api/claim/"; // ✅ NEW
 
         public ActionResult Index()
         {
             if (Session["UserName"] == null || Session["UserId"] == null)
                 return RedirectToAction("Login", "Account");
 
-            // Load user policies
+            // ------------------ LOAD POLICIES (AS IT IS) ------------------
             using (HttpClient client = new HttpClient())
             {
                 client.BaseAddress = new Uri(POLICY_API);
@@ -32,18 +33,35 @@ namespace InsureGo_MVC.Controllers
                 }
             }
 
-            // Payment success message
+            // ------------------ LOAD CLAIMS (NEW) ------------------
+            ViewBag.Claims = new List<dynamic>();
+
+            if (ViewBag.Policies != null)
+            {
+                foreach (var policy in ViewBag.Policies)
+                {
+                    using (HttpClient client = new HttpClient())
+                    {
+                        var res = client.GetAsync(
+                            CLAIM_API + "history/" + policy.PolicyId).Result;
+
+                        if (res.IsSuccessStatusCode)
+                        {
+                            var json = res.Content.ReadAsStringAsync().Result;
+                            ViewBag.Claims = JsonConvert.DeserializeObject<List<dynamic>>(json);
+                        }
+                    }
+                }
+            }
+
             ViewBag.Success = TempData["Success"];
             ViewBag.PolicyNumber = TempData["PolicyNumber"];
 
             return View();
         }
 
-        public ActionResult About()
-        {
-            return View();
-        }
-        public ActionResult Help() => View(); 
+        public ActionResult About() => View();
+        public ActionResult Help() => View();
         public ActionResult FAQ() => View();
         public ActionResult Home() => View();
         public ActionResult Error() => View();

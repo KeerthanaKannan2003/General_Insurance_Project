@@ -6,7 +6,7 @@ namespace InsureGo_MVC.Models.ViewModels
     {
         [Required]
         [Display(Name = "Vehicle Type")]
-        public int VehicleTypeId { get; set; }   // 1 = 2W, 2 = 4W
+        public int VehicleTypeId { get; set; }  // 1 = 2W, 2 = 4W
 
         [Required]
         [Range(0, 50)]

@@ -159,13 +159,20 @@
 @if (ViewBag.Success != null)
 {
     <div class="alert alert-success">
-        <h4>@ViewBag.Success</h4>
-        @if (ViewBag.PolicyNumber != null)
-        {
-            <p><strong>Policy Number:</strong> @ViewBag.PolicyNumber</p>
-        }
+        <strong>@ViewBag.Success</strong><br />
+
+        Your Policy Number:
+        <b>@ViewBag.PolicyNumber</b>
+
+        <br /><br />
+
+        <a class="btn btn-sm btn-primary"
+           href="@Url.Action("Details", "Policy", new { id = ViewBag.PolicyNumber })">
+            View Policy Details
+        </a>
     </div>
 }
+
 
 <!-- 4️⃣ YOUR POLICIES -->
 @if (ViewBag.Policies != null && ViewBag.Policies.Count > 0)
@@ -200,3 +207,34 @@
         </tbody>
     </table>
 }
+
+@if (ViewBag.Claims != null && ViewBag.Claims.Count > 0)
+{
+    <h3>Claim History</h3>
+
+    <table class="table table-bordered">
+        <tr>
+            <th>Policy Number</th>
+            <th>Claim Date</th>
+            <th>Claim Amount</th>
+            <th>Status</th>
+        </tr>
+
+        @foreach (var claim in ViewBag.Claims)
+        {
+            <tr>
+                <td>@claim.PolicyNumber</td>
+                <td>@(claim.ClaimDate != null ? claim.ClaimDate.ToString("dd-MM-yyyy") : "-")</td>
+                <td>
+                    @(claim.ClaimAmount != null ? "₹" + claim.ClaimAmount : "Pending")
+                </td>
+                <td>@claim.ClaimStatus</td>
+            </tr>
+        }
+    </table>
+}
+else
+{
+    <p>No claims submitted yet.</p>
+}
+

@@ -90,6 +90,13 @@ namespace InsureGo_API.Repository
                      .Where(c => c.PolicyId == policyId)
                      .ToList();
         }
+        public Policy GetPolicyByNumberAndMobile(string policyNumber, string mobile)
+        {
+            return db.Policies.FirstOrDefault(p =>
+                p.PolicyNumber == policyNumber &&
+                p.User.MobileNumber == mobile
+            );
+        }
 
     }
 
