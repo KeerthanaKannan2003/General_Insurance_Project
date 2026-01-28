@@ -1,0 +1,188 @@
+﻿﻿@model InsureGo_MVC.Models.ViewModels.PolicyViewModel
+
+@{
+    ViewBag.Title = "Policy Details";
+}
+
+<style>
+
+    body {
+        background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+        font-family: "Segoe UI", Roboto, sans-serif;
+    }
+
+
+    h2 {
+        text-align: center;
+        margin-top: 25px;
+        color: #0d47a1;
+        font-weight: 700;
+    }
+
+    .table {
+        width: 90%;
+        margin: 30px auto;
+        background: #fff;
+        border-radius: 18px;
+        overflow: hidden;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    }
+
+        .table th {
+            width: 35%;
+            background: #1e88e5;
+            color: white;
+            padding: 14px;
+            font-weight: 600;
+        }
+
+        .table td {
+            padding: 14px;
+            font-weight: 500;
+            background: #f9fbff;
+        }
+
+    .badge {
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-weight: 600;
+        font-size: 13px;
+    }
+
+    .badge-success {
+        background: linear-gradient(90deg, #43a047, #2e7d32);
+        color: white !important;
+    }
+
+    .mt-4 {
+        text-align: center;
+        margin-top: 25px;
+    }
+
+
+    .btn {
+        padding: 10px 20px;
+        border-radius: 40px;
+        font-weight: 600;
+        margin: 5px;
+        transition: 0.3s ease;
+        box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+    }
+
+    .btn-secondary {
+        background: linear-gradient(90deg, #607d8b, #455a64);
+        color: white;
+        border: none;
+    }
+
+    .btn-success {
+        background: linear-gradient(90deg, #43a047, #2e7d32);
+        color: white;
+        border: none;
+    }
+
+    .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    }
+
+
+    .alert-info {
+        width: 85%;
+        margin: 30px auto;
+        border-radius: 14px;
+        background: #e3f2fd;
+        border-left: 6px solid #1e88e5;
+        font-weight: 500;
+    }
+
+
+    .alert-danger {
+        width: 85%;
+        margin: 20px auto;
+        border-radius: 14px;
+        text-align: center;
+        font-weight: 600;
+    }
+
+
+    @@media (max-width: 600px) {
+
+        .table {
+            width: 100%;
+        }
+    }
+</style>
+
+
+
+<h2>Policy Details</h2>
+
+@if (Model == null)
+{
+    <div class="alert alert-danger">
+        @(ViewBag.Error ?? "Policy details not available.")
+    </div>
+
+    <a href="@Url.Action("Index", "Home")" class="btn btn-secondary">
+        Back to Dashboard
+    </a>
+}
+else
+{
+    <table class="table table-bordered">
+        <tr>
+            <th>Policy Number</th>
+            <td>@Model.PolicyNumber</td>
+        </tr>
+        <tr>
+            <th>Vehicle Model</th>
+            <td>@Model.VehicleModel</td>
+        </tr>
+        <tr>
+            <th>Registration Number</th>
+            <td>@Model.RegistrationNumber</td>
+        </tr>
+        <tr>
+            <th>Premium Amount</th>
+            <td>₹ @Model.PremiumAmount</td>
+        </tr>
+        <tr>
+            <th>Status</th>
+            <td>
+                <span class="badge badge-success" style="color: black;">
+                    @Model.PolicyStatus
+                </span>
+            </td>
+        </tr>
+    </table>
+
+    <div class="mt-4">
+        <a href="@Url.Action("Index", "Home")" class="btn btn-secondary">
+            Back to Dashboard
+        </a>
+
+        <a href="@Url.Action("Ticket", "Policy", new { id = Model.PolicyNumber })"
+           target="_blank"
+           class="btn btn-success">
+            Get Policy Ticket (Print)
+        </a>
+    </div>
+}
+
+<hr />
+
+<div class="alert alert-info mt-3">
+    <strong>Need help?</strong> Contact our insurance agent at 1800-123-4567.
+</div>
+
+@if (TempData["PolicyNumber"] != null)
+{
+    <script>
+        window.onload = function () {
+            var policyNum = '@TempData["PolicyNumber"]';
+            alert("Payment Successful! Your Policy Number is: " + policyNum +
+                  "\nYou can now download your Ticket below.");
+        };
+    </script>
+}

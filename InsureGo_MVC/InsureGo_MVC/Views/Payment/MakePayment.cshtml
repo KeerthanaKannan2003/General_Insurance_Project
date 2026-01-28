@@ -1,0 +1,107 @@
+﻿@model InsureGo_MVC.Models.ViewModels.PlanSelectionViewModel
+
+@{
+
+    ViewBag.Title = "Payment";
+
+}
+<style>
+
+    body {
+        background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+        font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    .payment-wrapper {
+        max-width: 600px;
+        margin: 50px auto;
+        background: #ffffff;
+        border-radius: 16px;
+        padding: 32px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+
+    .payment-heading {
+        font-size: 26px;
+        font-weight: 700;
+        color: #1a237e;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .payment-card {
+        background: #f9fbff;
+        border-radius: 14px;
+        padding: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #e3f2fd;
+    }
+
+        .payment-card p {
+            margin: 8px 0;
+            font-size: 15px;
+        }
+
+        .payment-card strong {
+            color: #1a237e;
+        }
+
+    .btn-success {
+        width: 100%;
+        padding: 12px;
+        border-radius: 999px;
+        border: none;
+        font-weight: 600;
+        background: linear-gradient(90deg, #43a047, #2e7d32);
+        color: #fff;
+        box-shadow: 0 6px 16px rgba(67,160,71,0.3);
+    }
+
+        .btn-success:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(67,160,71,0.4);
+        }
+</style>
+
+
+<div class="payment-wrapper">
+    <h2 class="payment-heading">Payment Details</h2>
+
+    @if (ViewBag.Error != null)
+
+    {
+        <div class="alert alert-danger">@ViewBag.Error</div>
+
+    }
+
+    @if (TempData["Error"] != null)
+
+    {
+        <div class="alert alert-danger">@TempData["Error"]</div>
+
+    }
+
+    @if (TempData["Success"] != null)
+
+    {
+        <div class="alert alert-success">@TempData["Success"]</div>
+
+    }
+
+    <div class="payment-card">
+        <p><strong>Plan:</strong> @Model.PlanName</p>
+        <p><strong>Duration:</strong> @Model.DurationYears years</p>
+        <p><strong>Premium:</strong> ₹@Model.PremiumAmount</p>
+        <p><strong>Vehicle:</strong> @Model.VehicleModel (@Model.RegistrationNumber)</p>
+    </div>
+
+
+    @using (Html.BeginForm("MakePaymentConfirmed", "Payment", FormMethod.Post))
+
+    {
+
+        @Html.AntiForgeryToken()
+        <button type="submit" class="btn btn-success">Pay Now</button>
+
+    }
+</div>

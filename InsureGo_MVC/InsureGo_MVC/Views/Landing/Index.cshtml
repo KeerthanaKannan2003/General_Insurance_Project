@@ -1,0 +1,147 @@
+﻿@{
+    ViewBag.Title = "Welcome";
+}
+<style>
+    body {
+        margin: 0;
+        font-family: "Segoe UI", Roboto, sans-serif;
+        background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+    }
+
+    /* Center wrapper */
+    .home-wrapper {
+        min-height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+
+    /* Main card */
+    .home-card {
+        background: #ffffff;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 900px;
+        width: 100%;
+        padding: 50px;
+        border-radius: 25px;
+        box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+    }
+
+    /* Left content */
+    .home-left {
+        flex: 1;
+        min-width: 280px;
+    }
+
+        .home-left h2 {
+            font-size: 36px;
+            color: #0d47a1;
+            margin-bottom: 10px;
+        }
+
+            .home-left h2 span {
+                color: #1e88e5;
+            }
+
+        .home-left p {
+            color: #555;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+    /* Buttons */
+    .btn-group-custom {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .home-btn {
+        text-decoration: none;
+        padding: 14px;
+        border-radius: 40px;
+        text-align: center;
+        font-weight: 600;
+        font-size: 16px;
+        transition: 0.3s ease;
+        color: white;
+    }
+
+        .home-btn.login {
+            background: linear-gradient(90deg, #1e88e5, #3949ab);
+        }
+
+        .home-btn.register {
+            background: linear-gradient(90deg, #43a047, #2e7d32);
+        }
+
+        .home-btn.admin {
+            background: linear-gradient(90deg, #f4511e, #bf360c);
+        }
+
+        .home-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+    /* Right image */
+    .home-right {
+        flex: 1;
+        text-align: center;
+        min-width: 280px;
+    }
+
+        .home-right img {
+            width: 100%;
+            max-width: 300px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+    /* Floating animation */
+    @@keyframes float {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-10px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    /* Mobile */
+    @@media (max-width: 768px) {
+        .home-card {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+</style>
+
+<div class="home-wrapper">
+
+    <div class="home-card">
+        <div class="home-left">
+            <h2>Welcome to <span>InsureGo</span></h2>
+            <p>Your smart insurance partner. Secure policies, easy claims, instant premium calculation — all in one place.</p>
+
+            <div class="btn-group-custom">
+                <a href="/Account/Login" class="home-btn login">User Login</a>
+                <a href="/Account/Register" class="home-btn register">User Register</a>
+                <a href="/Admin/Login" class="home-btn admin">Admin Login</a>
+            </div>
+        </div>
+
+        <div class="home-right">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Insurance Illustration" />
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,135 @@
+﻿@model InsureGo_MVC.Models.ViewModels.PolicyViewModel
+
+@{
+    ViewBag.Title = "Policy Ticket";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insurance Ticket - @Model.PolicyNumber</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 40px;
+        }
+
+        .ticket-box {
+            border: 2px solid #333;
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+            border-radius: 10px;
+            background: #fdfdfd;
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+            .header h1 {
+                color: #1a237e;
+                margin: 0;
+            }
+
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 12px;
+        }
+
+        .label {
+            font-weight: bold;
+            color: #555;
+        }
+
+        .value {
+            color: #000;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 12px;
+            color: #777;
+            border-top: 1px solid #eee;
+            padding-top: 10px;
+        }
+
+        .stamp {
+            border: 3px solid #4caf50;
+            color: #4caf50;
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 50%;
+            font-weight: bold;
+            transform: rotate(-10deg);
+            margin-top: 20px;
+        }
+
+        .btn-print {
+            background: #1a237e;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            display: block;
+            margin: 20px auto;
+        }
+
+        @@media print {
+            .btn-print {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="ticket-box">
+        <div class="header">
+            <h1>InsureGO</h1>
+            <p>Official Insurance Policy Ticket</p>
+        </div>
+
+        <div class="info-row">
+            <span class="label">Policy Number:</span>
+            <span class="value">@Model.PolicyNumber</span>
+        </div>
+        <div class="info-row">
+            <span class="label">Vehicle Model:</span>
+            <span class="value">@Model.VehicleModel</span>
+        </div>
+        <div class="info-row">
+            <span class="label">Registration No:</span>
+            <span class="value">@Model.RegistrationNumber</span>
+        </div>
+        <div class="info-row">
+            <span class="label">Premium Amount:</span>
+            <span class="value">₹ @Model.PremiumAmount</span>
+        </div>
+        <div class="info-row">
+            <span class="label">Status:</span>
+            <span class="value" style="color: green; font-weight: bold;">@Model.PolicyStatus</span>
+        </div>
+
+        <div style="text-align: right;">
+            <div class="stamp">VERIFIED</div>
+        </div>
+
+        <div class="footer">
+            <p>This is a computer-generated document. For claims, use the Policy Number above.</p>
+            <p>&copy; @DateTime.Now.Year InsureGo Systems Inc.</p>
+        </div>
+    </div>
+    <br />
+    <button class="btn-print" onclick="window.print()">Print Ticket</button>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+﻿@model List<InsureGo_MVC.Models.ViewModels.HomeClaimViewModel>
+
+<h3>Pending Claims</h3>
+
+@if (Model != null && Model.Any())
+{
+    <ul>
+        @foreach (var claim in Model)
+        {
+            <li style="margin-bottom: 20px; padding: 10px; border: 1px solid #ccc;">
+                <p><strong>Policy:</strong> @claim.PolicyNumber</p>
+                <p><strong>Reason:</strong> @claim.ClaimReason</p>
+                <p><strong>Date:</strong> @claim.ClaimDate.ToString("dd MMM yyyy")</p>
+
+                @using (Html.BeginForm("ApproveClaim", "Admin", FormMethod.Post))
+                {
+                    @Html.Hidden("claimId", claim.ClaimId)
+
+                    <label>Claim Amount</label>
+                    <input type="number" name="claimAmount" value="@claim.ClaimAmount ?? 0" step="0.01" required />
+
+                    <button type="submit">Approve</button>
+                }
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p>No pending claims.</p>
+}

@@ -1,0 +1,440 @@
+﻿@{
+
+    ViewBag.Title = "About Us";
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<style>
+
+    :root {
+
+
+        --ink-950: #0b1220;
+        --ink-900: #111827;
+        --ink-700: #1f2937;
+        --ink-500: #6b7280;
+        --surface: #f5f7fb;
+        --card: #ffffff;
+        --ring: #e5e7eb;
+
+
+        --brand-300: #6ec0ff;
+        --brand-400: #3da5ff;
+        --brand-500: #2a8bff;
+        --brand-600: #1e6bff;
+        --brand-800: #0c2f7a;
+   
+
+        --grad-1: linear-gradient(90deg, var(--brand-400), var(--brand-600));
+        --grad-2: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+      
+
+        --shadow-sm: 0 6px 16px rgba(17,24,39,.08);
+        --shadow-md: 0 14px 32px rgba(17,24,39,.10);
+        --shadow-lg: 0 30px 60px rgba(17,24,39,.15);
+        --radius: 18px;
+    }
+
+    
+    body {
+        background: var(--surface);
+    }
+
+
+
+    .hero-wrap {
+        max-width: 1200px;
+        margin: 26px auto 18px;
+        padding: 0 24px;
+        display: grid;
+        grid-template-columns: 1.2fr .8fr;
+        gap: clamp(18px,4vw,32px);
+        align-items: center;
+    }
+
+    .hero-title {
+        font-size: clamp(28px, 5.2vw, 52px);
+        font-weight: 900;
+        color: var(--ink-900);
+        letter-spacing: .2px;
+        margin: 0 0 12px;
+    }
+
+    .hero-eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 12px;
+        border-radius: 999px;
+        font-weight: 800;
+        background: #eaf5ff;
+        color: #0f3f8a;
+        border: 1px solid #d5e9ff;
+        box-shadow: var(--shadow-sm);
+    }
+
+    .hero-kicker {
+        color: var(--ink-500);
+        margin-top: 12px;
+        font-size: 16.5px;
+        line-height: 1.7;
+    }
+
+    .hero-art {
+        position: relative;
+        background: var(--card);
+        border: 1px solid rgba(17,24,39,.06);
+        border-radius: var(--radius);
+        padding: 14px;
+        box-shadow: var(--shadow-md);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+        .hero-art::after {
+
+            content: "";
+            position: absolute;
+            width: 520px;
+            height: 520px;
+            border-radius: 50%;
+            background: radial-gradient(closest-side, rgba(61,165,255,.25), rgba(61,165,255,0));
+            right: -120px;
+            top: -120px;
+            filter: blur(6px);
+        }
+
+    .hero-illustration {
+        width: 100%;
+        max-width: 520px;
+        border-radius: 14px;
+        display: block;
+        box-shadow: 0 10px 30px rgba(0,0,0,.06);
+    }
+
+
+    .about-wrap {
+        max-width: 1200px;
+        margin: 0 auto 46px;
+        padding: 0 24px;
+    }
+
+    .about-card {
+        background: var(--card);
+        border: 1px solid rgba(17,24,39,.06);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow-md);
+        padding: clamp(18px,3.8vw,28px);
+    }
+
+        .about-card p {
+            color: var(--ink-700);
+            line-height: 1.75;
+            font-size: 16.5px;
+            margin: 0 0 14px;
+        }
+
+        .about-card strong {
+            color: var(--ink-900);
+        }
+
+
+    .feature-list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0,1fr));
+        gap: 12px 28px;
+        margin: 10px 0 6px;
+        padding: 0;
+        list-style: none;
+    }
+
+        .feature-list li {
+            position: relative;
+            padding-left: 30px;
+            color: var(--ink-700);
+            line-height: 1.6;
+            font-weight: bold;
+        }
+
+            .feature-list li::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 8px;
+                width: 18px;
+                height: 18px;
+                border-radius: 50%;
+                background: var(--grad-1);
+                box-shadow: 0 6px 14px rgba(30,107,255,.25);
+            }
+
+ 
+
+    .highlights {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0,1fr));
+        gap: 18px;
+        margin-top: 18px;
+    }
+
+    .hl-card {
+        background: #ffffff;
+        border: 1px solid rgba(17,24,39,.06);
+        border-radius: 16px;
+        padding: 16px;
+        box-shadow: var(--shadow-sm);
+        transition: transform .12s ease, box-shadow .2s ease;
+    }
+
+        .hl-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+    .hl-icon {
+        width: 42px;
+        height: 42px;
+        border-radius: 10px;
+        background: var(--grad-1);
+        box-shadow: 0 10px 24px rgba(30,107,255,.28);
+        margin-bottom: 10px;
+    }
+
+    .hl-title {
+        font-weight: 800;
+        color: var(--ink-900);
+        margin-bottom: 6px;
+    }
+
+    .hl-text {
+        color: var(--ink-500);
+        line-height: 1.6;
+    }
+
+
+    .timeline {
+        margin-top: 24px;
+        background: #ffffff;
+        border: 1px solid rgba(17,24,39,.06);
+        border-radius: 16px;
+        padding: 18px;
+        box-shadow: var(--shadow-sm);
+    }
+
+    .t-item {
+        display: grid;
+        grid-template-columns: 120px 1fr;
+        gap: 16px;
+        align-items: start;
+        padding: 12px 0;
+    }
+
+    .t-year {
+        font-weight: 900;
+        color: var(--brand-600);
+        background: #eef5ff;
+        border: 1px solid #d8e7ff;
+        padding: 8px 12px;
+        border-radius: 999px;
+        text-align: center;
+        width: fit-content;
+    }
+
+    .t-text {
+        color: var(--ink-700);
+        line-height: 1.7;
+    }
+
+    
+    .stats {
+        margin-top: 22px;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0,1fr));
+        gap: 14px;
+    }
+
+    .stat {
+        background: #ffffff;
+        border: 1px solid rgba(17,24,39,.06);
+        border-radius: 14px;
+        padding: 14px 16px;
+        text-align: center;
+        box-shadow: var(--shadow-sm);
+    }
+
+        .stat .num {
+            font-size: clamp(22px, 4vw, 34px);
+            font-weight: 900;
+            background: var(--grad-1);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .stat .label {
+            color: var(--ink-500);
+            font-weight: 700;
+            letter-spacing: .2px
+        }
+
+
+    .cta {
+        margin-top: 26px;
+        background: var(--ink-950);
+        border-radius: 18px;
+        color: #e9f1ff;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 12px;
+        align-items: center;
+        box-shadow: var(--shadow-lg);
+        border: 1px solid rgba(255,255,255,.06);
+    }
+
+        .cta h3 {
+            margin: 0;
+            font-size: clamp(18px,3.2vw,28px);
+            font-weight: 900;
+        }
+
+        .cta p {
+            margin: 2px 0 0;
+            color: #cdd8ff
+        }
+
+        .cta .btn {
+            appearance: none;
+            border: none;
+            border-radius: 999px;
+            padding: 12px 18px;
+            font-weight: 800;
+            color: #fff;
+            background: var(--grad-1);
+            box-shadow: 0 12px 26px rgba(30,107,255,.34), inset 0 1px 0 rgba(255,255,255,.35);
+            cursor: pointer;
+            transition: transform .06s ease, filter .15s ease, box-shadow .2s ease;
+            white-space: nowrap;
+        }
+
+            .cta .btn:hover {
+                filter: brightness(1.05);
+            }
+
+            .cta .btn:active {
+                transform: translateY(1px);
+            }
+
+    
+
+    @@media (max-width: 1024px) {
+
+        .hero-wrap {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @@media (max-width: 860px) {
+
+        .feature-list {
+            grid-template-columns: 1fr;
+        }
+
+        .highlights {
+            grid-template-columns: 1fr;
+        }
+
+        .stats {
+            grid-template-columns: repeat(2, minmax(0,1fr));
+        }
+    }
+</style>
+
+
+<div class="hero-wrap">
+    <div>
+        <div class="hero-eyebrow"><span style="width:8px;height:8px;border-radius:50%;background:var(--brand-500);box-shadow:0 0 0 4px rgba(30,107,255,.18)"></span> Modern Insurance, Made Simple</div>
+        <h1 class="hero-title">About <span style="background:var(--grad-1);-webkit-background-clip:text;background-clip:text;color:transparent;">InsureGo</span></h1>
+        <p class="hero-kicker">A secure, seamless platform to buy, renew, and claim insurance—without middlemen or paperwork.</p>
+    </div>
+    <div class="hero-art">
+       
+        <img class="hero-illustration" src="https://tse3.mm.bing.net/th/id/OIP.w77ZApbg2smpnmhQSs8mDQHaDz?rs=1&pid=ImgDetMain&o=7&rm=3%22 alt="Insurance illustration">
+    </div>
+</div>
+
+
+<div class="about-wrap">
+    <div class="about-card">
+        <p><strong>InsureGo</strong> is a modern, user‑friendly insurance management system designed to simplify how customers buy, renew, and claim insurance policies online.</p>
+
+        <p>Our mission is to eliminate the need for middlemen and manual paperwork by offering a secure, responsive platform where users can:</p>
+
+        <ul class="feature-list">
+            <li>Buy motor or travel insurance instantly</li>
+            <li>Renew expired policies with ease</li>
+            <li>Estimate premium costs before committing</li>
+            <li>Submit and track insurance claims online</li>
+        </ul>
+
+        <p>Whether you're insuring a two‑wheeler, four‑wheeler, or planning a trip, InsureGo is your trusted digital companion for hassle‑free insurance.</p>
+
+        <div class="highlights">
+            <div class="hl-card">
+                <div class="hl-icon"></div>
+                <div class="hl-title">Secure by Design</div>
+                <div class="hl-text">Anti‑forgery, role‑based access, and validated workflows to protect every action.</div>
+            </div>
+            <div class="hl-card">
+                <div class="hl-icon"></div>
+                <div class="hl-title">Fast & Reliable</div>
+                <div class="hl-text">Optimized MVC ,WebAPI with efficient SQL operations for snappy performance.</div>
+            </div>
+            <div class="hl-card">
+                <div class="hl-icon"></div>
+                <div class="hl-title">Mobile‑Ready</div>
+                <div class="hl-text">Responsive UI components that feel natural on phones, tablets, and desktops.</div>
+            </div>
+        </div>
+
+       
+        <div class="timeline">
+            <div class="t-item">
+                <div class="t-year">2024</div>
+                <div class="t-text"><strong>Launch:</strong> Core motor & travel flows, policy search, and claims submission go live.</div>
+            </div>
+            <div class="t-item">
+                <div class="t-year">2025</div>
+                <div class="t-text"><strong>Growth:</strong> Premium estimator, payment UX polish, and admin dashboards introduced.</div>
+            </div>
+            <div class="t-item">
+                <div class="t-year">2026</div>
+                <div class="t-text"><strong>Scale:</strong> Improved claims tracking, audit trails, and advanced validation for reliability.</div>
+            </div>
+        </div>
+
+        
+        <div class="stats">
+            <div class="stat"><div class="num">99.9%</div><div class="label">Uptime</div></div>
+            <div class="stat"><div class="num">10x</div><div class="label">Faster Claims</div></div>
+            <div class="stat"><div class="num">24/7</div><div class="label">Self Service</div></div>
+            <div class="stat"><div class="num">100%</div><div class="label">Responsive</div></div>
+        </div>
+
+     
+        <div class="cta">
+            <div>
+                <h3>Ready to insure with confidence?</h3>
+                <p>Get a quick quote or renew your policy in minutes.</p>
+            </div>
+            <div>
+                <a class="btn" href="@Url.Action("Index","Home")">Explore InsureGo</a>
+            </div>
+        </div>
+    </div>
+</div>
+

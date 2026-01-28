@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="InsureGoDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Claims">
+    <Key>
+      <PropertyRef Name="ClaimId" />
+    </Key>
+    <Property Name="ClaimId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PolicyId" Type="int" />
+    <Property Name="ClaimReason" Type="varchar" MaxLength="300" />
+    <Property Name="ClaimDate" Type="datetime" />
+    <Property Name="ClaimStatus" Type="varchar" MaxLength="30" />
+    <Property Name="ClaimAmount" Type="decimal" Precision="10" Scale="2" />
+  </EntityType>
+  <EntityType Name="InsurancePlans">
+    <Key>
+      <PropertyRef Name="PlanId" />
+    </Key>
+    <Property Name="PlanId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PlanName" Type="varchar" MaxLength="50" />
+    <Property Name="Description" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="InsuranceTypes">
+    <Key>
+      <PropertyRef Name="InsuranceTypeId" />
+    </Key>
+    <Property Name="InsuranceTypeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="InsuranceTypeName" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Payments">
+    <Key>
+      <PropertyRef Name="PaymentId" />
+    </Key>
+    <Property Name="PaymentId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PolicyId" Type="int" />
+    <Property Name="PaymentDate" Type="datetime" />
+    <Property Name="Amount" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="PaymentStatus" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Policies">
+    <Key>
+      <PropertyRef Name="PolicyId" />
+    </Key>
+    <Property Name="PolicyId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PolicyNumber" Type="varchar" MaxLength="30" />
+    <Property Name="UserId" Type="int" />
+    <Property Name="InsuranceTypeId" Type="int" />
+    <Property Name="VehicleId" Type="int" />
+    <Property Name="PlanId" Type="int" />
+    <Property Name="DurationId" Type="int" />
+    <Property Name="PremiumAmount" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="StartDate" Type="date" />
+    <Property Name="EndDate" Type="date" />
+    <Property Name="PolicyStatus" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="PolicyDurations">
+    <Key>
+      <PropertyRef Name="DurationId" />
+    </Key>
+    <Property Name="DurationId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DurationYears" Type="int" />
+  </EntityType>
+  <EntityType Name="PremiumRates">
+    <Key>
+      <PropertyRef Name="RateId" />
+    </Key>
+    <Property Name="RateId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="VehicleTypeId" Type="int" />
+    <Property Name="BasePremium" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="PerYearCharge" Type="decimal" Precision="10" Scale="2" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FullName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="EmailId" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="DateOfBirth" Type="date" Nullable="false" />
+    <Property Name="ContactNumber" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Address" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="PasswordHash" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Vehicles">
+    <Key>
+      <PropertyRef Name="VehicleId" />
+    </Key>
+    <Property Name="VehicleId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Manufacturer" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Model" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DrivingLicenseNumber" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="PurchaseDate" Type="date" Nullable="false" />
+    <Property Name="RegistrationNumber" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="EngineNumber" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="ChassisNumber" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="VehicleTypeId" Type="int" />
+  </EntityType>
+  <EntityType Name="VehicleTypes">
+    <Key>
+      <PropertyRef Name="VehicleTypeId" />
+    </Key>
+    <Property Name="VehicleTypeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="VehicleTypeName" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'InsureGoDB.dbo.ClaimHistory' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ClaimHistory">
+    <Key>
+      <PropertyRef Name="ClaimId" />
+    </Key>
+    <Property Name="ClaimId" Type="int" Nullable="false" />
+    <Property Name="PolicyNumber" Type="varchar" MaxLength="30" />
+    <Property Name="ClaimDate" Type="datetime" />
+    <Property Name="ClaimStatus" Type="varchar" MaxLength="30" />
+    <Property Name="ClaimAmount" Type="decimal" Precision="10" Scale="2" />
+  </EntityType>
+  <Association Name="FK__Claims__PolicyId__571DF1D5">
+    <End Role="Policies" Type="Self.Policies" Multiplicity="0..1" />
+    <End Role="Claims" Type="Self.Claims" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Policies">
+        <PropertyRef Name="PolicyId" />
+      </Principal>
+      <Dependent Role="Claims">
+        <PropertyRef Name="PolicyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Payments__Policy__534D60F1">
+    <End Role="Policies" Type="Self.Policies" Multiplicity="0..1" />
+    <End Role="Payments" Type="Self.Payments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Policies">
+        <PropertyRef Name="PolicyId" />
+      </Principal>
+      <Dependent Role="Payments">
+        <PropertyRef Name="PolicyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Policies__Durati__4CA06362">
+    <End Role="PolicyDurations" Type="Self.PolicyDurations" Multiplicity="0..1" />
+    <End Role="Policies" Type="Self.Policies" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PolicyDurations">
+        <PropertyRef Name="DurationId" />
+      </Principal>
+      <Dependent Role="Policies">
+        <PropertyRef Name="DurationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Policies__Insura__49C3F6B7">
+    <End Role="InsuranceTypes" Type="Self.InsuranceTypes" Multiplicity="0..1" />
+    <End Role="Policies" Type="Self.Policies" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="InsuranceTypes">
+        <PropertyRef Name="InsuranceTypeId" />
+      </Principal>
+      <Dependent Role="Policies">
+        <PropertyRef Name="InsuranceTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Policies__PlanId__4BAC3F29">
+    <End Role="InsurancePlans" Type="Self.InsurancePlans" Multiplicity="0..1" />
+    <End Role="Policies" Type="Self.Policies" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="InsurancePlans">
+        <PropertyRef Name="PlanId" />
+      </Principal>
+      <Dependent Role="Policies">
+        <PropertyRef Name="PlanId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Policies__UserId__48CFD27E">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Policies" Type="Self.Policies" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Policies">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Policies__Vehicl__4AB81AF0">
+    <End Role="Vehicles" Type="Self.Vehicles" Multiplicity="0..1" />
+    <End Role="Policies" Type="Self.Policies" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicles">
+        <PropertyRef Name="VehicleId" />
+      </Principal>
+      <Dependent Role="Policies">
+        <PropertyRef Name="VehicleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PremiumRa__Vehic__4F7CD00D">
+    <End Role="VehicleTypes" Type="Self.VehicleTypes" Multiplicity="0..1" />
+    <End Role="PremiumRates" Type="Self.PremiumRates" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VehicleTypes">
+        <PropertyRef Name="VehicleTypeId" />
+      </Principal>
+      <Dependent Role="PremiumRates">
+        <PropertyRef Name="VehicleTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vehicles_VehicleTypes">
+    <End Role="VehicleTypes" Type="Self.VehicleTypes" Multiplicity="0..1" />
+    <End Role="Vehicles" Type="Self.Vehicles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VehicleTypes">
+        <PropertyRef Name="VehicleTypeId" />
+      </Principal>
+      <Dependent Role="Vehicles">
+        <PropertyRef Name="VehicleTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="CalculatePremium" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="VehicleTypeId" Type="int" Mode="In" />
+    <Parameter Name="VehicleAge" Type="int" Mode="In" />
+  </Function>
+  <Function Name="RenewPolicy" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="OldPolicyNumber" Type="varchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="InsureGoDBModelStoreContainer">
+    <EntitySet Name="Claims" EntityType="Self.Claims" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="InsurancePlans" EntityType="Self.InsurancePlans" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="InsuranceTypes" EntityType="Self.InsuranceTypes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Payments" EntityType="Self.Payments" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Policies" EntityType="Self.Policies" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PolicyDurations" EntityType="Self.PolicyDurations" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PremiumRates" EntityType="Self.PremiumRates" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Vehicles" EntityType="Self.Vehicles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VehicleTypes" EntityType="Self.VehicleTypes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ClaimHistory" EntityType="Self.ClaimHistory" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ClaimHistory].[ClaimId] AS [ClaimId], 
+    [ClaimHistory].[PolicyNumber] AS [PolicyNumber], 
+    [ClaimHistory].[ClaimDate] AS [ClaimDate], 
+    [ClaimHistory].[ClaimStatus] AS [ClaimStatus], 
+    [ClaimHistory].[ClaimAmount] AS [ClaimAmount]
+    FROM [dbo].[ClaimHistory] AS [ClaimHistory]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__Claims__PolicyId__571DF1D5" Association="Self.FK__Claims__PolicyId__571DF1D5">
+      <End Role="Policies" EntitySet="Policies" />
+      <End Role="Claims" EntitySet="Claims" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Payments__Policy__534D60F1" Association="Self.FK__Payments__Policy__534D60F1">
+      <End Role="Policies" EntitySet="Policies" />
+      <End Role="Payments" EntitySet="Payments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Policies__Durati__4CA06362" Association="Self.FK__Policies__Durati__4CA06362">
+      <End Role="PolicyDurations" EntitySet="PolicyDurations" />
+      <End Role="Policies" EntitySet="Policies" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Policies__Insura__49C3F6B7" Association="Self.FK__Policies__Insura__49C3F6B7">
+      <End Role="InsuranceTypes" EntitySet="InsuranceTypes" />
+      <End Role="Policies" EntitySet="Policies" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Policies__PlanId__4BAC3F29" Association="Self.FK__Policies__PlanId__4BAC3F29">
+      <End Role="InsurancePlans" EntitySet="InsurancePlans" />
+      <End Role="Policies" EntitySet="Policies" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Policies__UserId__48CFD27E" Association="Self.FK__Policies__UserId__48CFD27E">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Policies" EntitySet="Policies" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Policies__Vehicl__4AB81AF0" Association="Self.FK__Policies__Vehicl__4AB81AF0">
+      <End Role="Vehicles" EntitySet="Vehicles" />
+      <End Role="Policies" EntitySet="Policies" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PremiumRa__Vehic__4F7CD00D" Association="Self.FK__PremiumRa__Vehic__4F7CD00D">
+      <End Role="VehicleTypes" EntitySet="VehicleTypes" />
+      <End Role="PremiumRates" EntitySet="PremiumRates" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vehicles_VehicleTypes" Association="Self.FK_Vehicles_VehicleTypes">
+      <End Role="VehicleTypes" EntitySet="VehicleTypes" />
+      <End Role="Vehicles" EntitySet="Vehicles" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

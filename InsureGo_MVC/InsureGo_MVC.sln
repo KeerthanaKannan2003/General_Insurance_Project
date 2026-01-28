@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36908.2
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsureGo_MVC", "InsureGo_MVC\InsureGo_MVC.csproj", "{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{D3156783-C22E-4174-B3C1-CDCC44592ECE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3156783-C22E-4174-B3C1-CDCC44592ECE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3156783-C22E-4174-B3C1-CDCC44592ECE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3156783-C22E-4174-B3C1-CDCC44592ECE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3156783-C22E-4174-B3C1-CDCC44592ECE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0B3211B1-C7DD-4589-B1FA-C30FE051E1C7}
+	EndGlobalSection
+EndGlobal

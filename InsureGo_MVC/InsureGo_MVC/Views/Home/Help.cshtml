@@ -1,0 +1,194 @@
+﻿@{
+    ViewBag.Title = "Help";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    :root {
+        --ink-900: #111827;
+        --ink-700: #1f2937;
+        --ink-500: #6b7280;
+        --card: #ffffff;
+        --brand-400: #3da5ff;
+        --brand-600: #1e6bff;
+        --grad-1: linear-gradient(90deg, var(--brand-400), var(--brand-600));
+        --shadow-sm: 0 6px 16px rgba(17,24,39,.08);
+        --shadow-md: 0 14px 32px rgba(17,24,39,.10);
+        --radius: 18px;
+    }
+
+    body {
+        background: #f5f7fb;
+        font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    .help-wrap {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 0 24px;
+    }
+
+    .help-card {
+        background: var(--card);
+        border: 1px solid rgba(17,24,39,.06);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow-md);
+        padding: clamp(20px, 3vw, 32px);
+    }
+
+    .help-heading {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+        .help-heading h2 {
+            font-size: clamp(24px, 4vw, 36px);
+            font-weight: 900;
+            color: var(--ink-900);
+            margin: 0;
+        }
+
+    .help-card p {
+        color: var(--ink-700);
+        line-height: 1.7;
+        font-size: 16.5px;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    .help-list {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto 20px;
+        max-width: 700px;
+    }
+
+        .help-list li {
+            background: #f9fbff;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 14px 18px;
+            margin-bottom: 14px;
+            font-size: 15.5px;
+            color: var(--ink-700);
+            box-shadow: var(--shadow-sm);
+            transition: transform .1s ease, box-shadow .2s ease;
+        }
+
+            .help-list li:hover {
+                transform: translateY(-2px);
+                box-shadow: var(--shadow-md);
+            }
+
+        .help-list strong {
+            color: var(--ink-900);
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 700;
+        }
+
+    .help-footer {
+        text-align: center;
+        font-size: 14px;
+        color: var(--ink-500);
+        margin-top: 12px;
+    }
+
+
+    .extra-features {
+        margin-top: 28px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 16px;
+    }
+
+    .feature-card {
+        background: #ffffff;
+        border: 1px solid rgba(17,24,39,.06);
+        border-radius: 14px;
+        padding: 16px;
+        text-align: center;
+        box-shadow: var(--shadow-sm);
+        transition: transform .1s ease, box-shadow .2s ease;
+    }
+
+        .feature-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .feature-card h4 {
+            font-weight: 800;
+            color: var(--ink-900);
+            margin-bottom: 6px;
+        }
+
+        .feature-card p {
+            color: var(--ink-500);
+            font-size: 14px;
+            margin: 0;
+        }
+
+    @@media (max-width: 768px) {
+        .help-list strong {
+            font-size: 14px;
+        }
+
+        .help-list li {
+            font-size: 14px;
+        }
+    }
+</style>
+
+<div class="help-wrap">
+    <div class="help-card">
+        <div class="help-heading">
+            <h2>Help Center</h2>
+        </div>
+
+        <p>Need assistance? Here's how we can help:</p>
+
+        <ul class="help-list">
+            <li>
+                <strong>Buying Insurance</strong>
+                Go to <em>Buy Insurance</em>, select your vehicle type, enter details, choose a plan, and make payment.
+            </li>
+            <li>
+                <strong>Renewing Insurance</strong>
+                Click <em>Renew Insurance</em>, enter your old policy number, and proceed with payment.
+            </li>
+            <li>
+                <strong>Claiming Insurance</strong>
+                Use the <em>Claim Insurance</em> link, specify your reason, and contact our support team.
+            </li>
+            <li>
+                <strong>Estimate Premium</strong>
+                Use the <em>Estimate Insurance</em> tool to calculate your expected premium before buying.
+            </li>
+        </ul>
+
+        <p class="help-footer">
+            If you're still stuck, visit our <a href="/Home/FAQ">FAQ</a> or reach out via the <a href="/Home/Contact">Contact</a> page.
+        </p>
+
+
+        <div class="extra-features">
+            <div class="feature-card">
+                <h4>Instant Quotes</h4>
+                <p>Estimate your premium in seconds.</p>
+            </div>
+            <div class="feature-card">
+                <h4>Policy Tracker</h4>
+                <p>Monitor active policies and renewal dates.</p>
+            </div>
+            <div class="feature-card">
+                <h4>Claim Status</h4>
+                <p>Track your claim progress in real-time.</p>
+            </div>
+            <div class="feature-card">
+                <h4>24/7 Support</h4>
+                <p>Chat with our team anytime, anywhere.</p>
+            </div>
+        </div>
+    </div>
+</div>

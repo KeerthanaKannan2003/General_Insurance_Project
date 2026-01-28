@@ -1,0 +1,148 @@
+﻿@model IEnumerable<InsureGo_MVC.Models.ViewModels.ClaimHistoryViewModel>
+
+@{
+
+    ViewBag.Title = "Claim History";
+
+}
+
+<style>
+    body {
+        background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+        font-family: "Segoe UI", Roboto, sans-serif;
+    }
+
+    h2 {
+        text-align: center;
+        margin-top: 25px;
+        color: #0d47a1;
+        font-weight: 700;
+    }
+
+    .table {
+        margin: 30px auto;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+        background: white;
+    }
+
+        .table th {
+            text-align: center;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .table td {
+            text-align: center;
+            vertical-align: middle;
+            font-size: 14px;
+        }
+
+
+        .table tbody tr:hover {
+            background-color: #f1f8ff;
+            transform: scale(1.01);
+            transition: 0.2s ease;
+        }
+
+
+    .status-approved {
+        background: linear-gradient(90deg, #43a047, #2e7d32);
+        color: white;
+        padding: 6px 14px;
+        border-radius: 20px;
+        font-weight: 600;
+        font-size: 13px;
+        display: inline-block;
+    }
+
+    .status-rejected {
+        background: linear-gradient(90deg, #e53935, #b71c1c);
+        color: white;
+        padding: 6px 14px;
+        border-radius: 20px;
+        font-weight: 600;
+        font-size: 13px;
+        display: inline-block;
+    }
+
+
+    .btn-primary {
+        display: block;
+        margin: 25px auto;
+        width: 200px;
+        text-align: center;
+        border-radius: 40px;
+        font-weight: 600;
+        padding: 10px;
+        background: linear-gradient(90deg, #1e88e5, #3949ab);
+        border: none;
+        box-shadow: 0 8px 18px rgba(30,136,229,0.4);
+    }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 22px rgba(30,136,229,0.5);
+        }
+</style>
+
+
+<h2>Claim History - @ViewBag.PolicyNumber</h2>
+
+@if (Model != null && Model.Any())
+
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Claim No</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var claim in Model)
+
+            {
+                <tr>
+                    <td>@claim.ClaimId</td>
+                    <td>@(claim.ClaimDate.HasValue ? claim.ClaimDate.Value.ToString("dd-MM-yyyy") : "N/A")</td>
+                    <td>
+
+                        @if (claim.ClaimStatus == "Approved")
+
+                        {
+                            <span class="status-approved">Approved</span>
+
+                        }
+
+                        else
+
+                        {
+                            <span class="status-rejected">Not Approved</span>
+
+                        }
+                    </td>
+                    <td>₹ @(claim.ClaimAmount.HasValue ? claim.ClaimAmount.Value.ToString("N2") : "0.00")</td>
+                </tr>
+
+            }
+        </tbody>
+    </table>
+
+}
+
+else
+
+{
+    <p class="no-data">No claims found for this policy.</p>
+
+}
+
+<a href="@Url.Action("Index", "Home")" class="btn btn-primary">
+
+    ⬅ Back to Home
+</a>

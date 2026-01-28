@@ -1,0 +1,16 @@
+﻿@model InsureGo_MVC.Models.ViewModels.SetClaimAmountViewModel
+
+<h2>Approve Claim</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(m => m.ClaimId)
+
+    <div>
+        <label>Claim Amount</label>
+        @Html.TextBoxFor(m => m.ClaimAmount, new { @class = "form-control" })
+    </div>
+
+    <br />
+    <button type="submit" class="btn btn-success">Approve</button>
+}

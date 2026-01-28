@@ -1,0 +1,241 @@
+﻿@model InsureGo_MVC.Models.ViewModels.PremiumViewModel
+@{
+    ViewBag.Title = "Calculate Premium";
+}
+
+<div class="calculator-container">
+
+    <h2>Premium Calculator</h2>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">@TempData["Success"]</div>
+    }
+
+    @if (ViewBag.Error != null)
+    {
+        <div class="alert alert-danger">@ViewBag.Error</div>
+    }
+
+    @using (Html.BeginForm("Calculate", "Premium", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+
+        <!-- Vehicle Type Section -->
+        <div class="form-section">
+            <label class="section-label">Vehicle Type</label>
+            <div class="vehicle-type-options">
+                <label class="radio-card">
+                    @Html.RadioButtonFor(m => m.VehicleTypeId, 1)
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.QnVQQ2tQSCPrP8Ex5oNrcwHaEK?w=313&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3%22 alt="2-Wheeler" class="vehicle-icon" />
+                    2-Wheeler
+                </label>
+                <label class="radio-card">
+                    @Html.RadioButtonFor(m => m.VehicleTypeId, 2)
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.etiAvZvNioKZo76lgL7TfgHaHa?w=626&h=626&rs=1&pid=ImgDetMain&o=7&rm=3%22 alt="4-Wheeler" class="vehicle-icon" />
+                    4-Wheeler
+                </label>
+            </div>
+            @Html.ValidationMessageFor(m => m.VehicleTypeId, "", new { @class = "text-danger" })
+
+        </div>
+
+        <!-- Vehicle Age Section -->
+        <div class="form-section">
+            @Html.LabelFor(m => m.VehicleAge)
+            @Html.TextBoxFor(m => m.VehicleAge, new { @class = "form-control", placeholder = "Enter Vehicle Age in Years" })
+            @Html.ValidationMessageFor(m => m.VehicleAge, "", new { @class = "text-danger" })
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-section">
+            <input type="submit" value="Calculate Premium" class="btn btn-premium" />
+        </div>
+        <div class="form-section" style="text-align:center;">
+            <a href="@Url.Action("Index", "Home")" class="btn btn-home">⬅ Back to Home</a>
+        </div>
+
+        <!-- Premium Amount Display -->
+
+
+
+    }
+    @if (Model != null && Model.PremiumAmount > 0)
+    {
+        <div class="premium-display">
+
+            <h4>Premium Amount: ₹@Model.PremiumAmount</h4>
+        </div>
+    }
+</div>
+
+<style>
+    /* ---------- Fonts ---------- */
+    @@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(135deg, #d0e7ff, #ffffff);
+        margin: 0;
+        padding: 0;
+    }
+
+    /* ---------- Calculator Container ---------- */
+    .calculator-container {
+        background: #ffffff;
+        max-width: 600px;
+        width: 100%;
+        margin: 40px auto;
+        border-radius: 20px;
+        box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+        padding: 40px 30px;
+    }
+
+        /* ---------- Heading ---------- */
+        .calculator-container h2 {
+            text-align: center;
+            color: #1a237e;
+            font-weight: 700;
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+    /* ---------- Alerts ---------- */
+    .alert {
+        text-align: center;
+        padding: 12px 20px;
+        border-radius: 12px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .alert-success {
+        background: #d0f0dd;
+        color: #1b5e20;
+    }
+
+    .alert-danger {
+        background: #ffdde0;
+        color: #c62828;
+    }
+
+    /* ---------- Form Sections ---------- */
+    .form-section {
+        margin-bottom: 22px;
+    }
+
+    /* ---------- Labels ---------- */
+    label, .section-label {
+        font-weight: 600;
+        color: #37474f;
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    /* ---------- Vehicle Type Options ---------- */
+    .vehicle-type-options {
+        display: flex;
+        gap: 20px;
+    }
+
+    .radio-card {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 16px;
+        border: 1px solid #cfd8dc;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        flex: 1;
+        background: #f9fbff;
+    }
+
+        .radio-card:hover {
+            background: #e3f2fd;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+
+        .radio-card input[type="radio"] {
+            accent-color: #1e88e5;
+        }
+
+    .btn-home {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 12px 20px;
+        border-radius: 999px;
+        text-decoration: none;
+        font-weight: 600;
+        background: linear-gradient(90deg, #607d8b, #455a64);
+        color: #fff;
+        transition: 0.3s ease;
+    }
+
+        .btn-home:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+        }
+
+    /* Vehicle icons */
+    .vehicle-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* ---------- Input Fields ---------- */
+    .form-control {
+        width: 100%;
+        padding: 12px 16px;
+        font-size: 15px;
+        border-radius: 12px;
+        border: 1px solid #cfd8dc;
+        background: #f9fbff;
+        transition: all 0.3s ease;
+    }
+
+        .form-control:focus {
+            outline: none;
+            border-color: #1e88e5;
+            box-shadow: 0 0 0 3px rgba(30,136,229,0.25);
+        }
+
+    /* ---------- Submit Button ---------- */
+    .btn-premium {
+        width: 100%;
+        padding: 14px;
+        border-radius: 999px;
+        border: none;
+        font-weight: 700;
+        font-size: 16px;
+        background: linear-gradient(90deg, #ff6f00, #ff8f00);
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+        .btn-premium:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(255,143,0,0.4);
+        }
+
+    /* ---------- Premium Display ---------- */
+    .premium-display {
+        margin-top: 25px;
+        text-align: center;
+    }
+
+        .premium-display h4 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #1e88e5;
+            margin-top: 10px;
+        }
+
+    /* Premium Icon */
+    .premium-icon {
+        width: 40px;
+        height: 40px;
+    }
+</style>

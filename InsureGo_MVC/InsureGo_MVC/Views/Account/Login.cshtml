@@ -1,0 +1,140 @@
+﻿@model InsureGo_MVC.Models.ViewModels.LoginViewModel
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: #f5f7fb;
+        color: #162036;
+    }
+
+    .hero {
+        max-width: 900px;
+        margin: 50px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .form-wrap {
+        background: #fff;
+        border-radius: 16px;
+        padding: 30px;
+        width: 360px;
+        box-shadow: 0 10px 24px rgba(0,0,0,.08);
+    }
+
+    .form-row {
+        margin-bottom: 15px;
+    }
+
+    .input {
+        width: 100%;
+        padding: 12px 16px;
+        font-size: 15px;
+        border-radius: 999px;
+        border: 1px solid #e6ebf2;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 12px;
+        border-radius: 999px;
+        border: 0;
+        color: #fff;
+        font-weight: 700;
+        background: linear-gradient(90deg,#19b3c6,#1f62d1);
+        cursor: pointer;
+    }
+
+        .btn:hover {
+            filter: brightness(1.05);
+        }
+
+    .alert {
+        padding: 10px 15px;
+        border-radius: 8px;
+        margin-bottom: 12px;
+        font-size: 14px;
+    }
+
+    .alert-success {
+        background: #d1fae5;
+        color: #065f46;
+    }
+
+    .alert-error {
+        background: #fee2e2;
+        color: #991b1b;
+    }
+
+    .links {
+        font-size: 13px;
+        text-align: center;
+        margin-top: 12px;
+    }
+
+        .links a {
+            color: #1f62d1;
+            text-decoration: none;
+            margin: 0 6px;
+            font-weight: 600;
+        }
+
+            .links a:hover {
+                text-decoration: underline;
+            }
+</style>
+
+<div class="hero">
+    <div class="form-wrap">
+        <h2 style="margin-bottom: 15px;">Login to InsureGo</h2>
+        <p style="margin-bottom: 20px; color: #6b7a99;">Enter your credentials to continue.</p>
+
+        <!-- Success message (e.g., after password reset) -->
+        @if (TempData["Success"] != null)
+        {
+            <div class="alert alert-success">@TempData["Success"]</div>
+        }
+
+        <!-- Error message -->
+        @if (ViewBag.Error != null)
+        {
+            <div class="alert alert-error">@ViewBag.Error</div>
+        }
+
+        @using (Html.BeginForm("Login", "Account", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-row">
+                @Html.LabelFor(m => m.EmailId)
+                @Html.TextBoxFor(m => m.EmailId, new { @class = "input", placeholder = "Enter your email" })
+                @Html.ValidationMessageFor(m => m.EmailId, "", new { @style = "color:red;font-size:12px;" })
+            </div>
+
+            <div class="form-row">
+                @Html.LabelFor(m => m.Password)
+                @Html.PasswordFor(m => m.Password, new { @class = "input", placeholder = "Enter your password" })
+                @Html.ValidationMessageFor(m => m.Password, "", new { @style = "color:red;font-size:12px;" })
+            </div>
+
+            <div class="form-row">
+                <input type="submit" value="Login" class="btn" />
+            </div>
+
+            <div class="links">
+                @Html.ActionLink("Register", "Register", "Account")
+                <span>|</span>
+                @Html.ActionLink("Forgot Password?", "ForgotPassword", "Account")
+            </div>
+        }
+    </div>
+</div>

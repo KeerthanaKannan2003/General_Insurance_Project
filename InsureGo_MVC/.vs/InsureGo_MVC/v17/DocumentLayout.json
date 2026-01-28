@@ -1,0 +1,1018 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Project\\InsureGo_MVC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\views\\policy\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\views\\policy\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\views\\landing\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\views\\landing\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|c:\\project\\insurego_mvc\\insurego_mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3156783-C22E-4174-B3C1-CDCC44592ECE}|UnitTest\\UnitTest.csproj|c:\\project\\insurego_mvc\\unittest\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3156783-C22E-4174-B3C1-CDCC44592ECE}|UnitTest\\UnitTest.csproj|solutionrelative:unittest\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3156783-C22E-4174-B3C1-CDCC44592ECE}|UnitTest\\UnitTest.csproj|c:\\project\\insurego_mvc\\unittest\\controllertesthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3156783-C22E-4174-B3C1-CDCC44592ECE}|UnitTest\\UnitTest.csproj|solutionrelative:unittest\\controllertesthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\controllers\\vehiclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\controllers\\vehiclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|c:\\project\\insurego_mvc\\insurego_mvc\\controllers\\premiumcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\controllers\\premiumcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\controllers\\policycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\controllers\\policycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|c:\\project\\insurego_mvc\\insurego_mvc\\controllers\\landingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\controllers\\landingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\controllers\\insurancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\controllers\\insurancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\controllers\\claimcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\controllers\\claimcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\models\\viewmodels\\adminloginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\models\\viewmodels\\adminloginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\models\\viewmodels\\claiminsuranceviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\models\\viewmodels\\claiminsuranceviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\models\\viewmodels\\claimhistoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\models\\viewmodels\\claimhistoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\models\\viewmodels\\forgetpasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\models\\viewmodels\\forgetpasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\models\\viewmodels\\homeclaimviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\models\\viewmodels\\homeclaimviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\models\\viewmodels\\insuranceplanviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\models\\viewmodels\\insuranceplanviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\models\\viewmodels\\insuranceviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\models\\viewmodels\\insuranceviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\models\\viewmodels\\loginresponseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\models\\viewmodels\\loginresponseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\models\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\models\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\models\\viewmodels\\paymentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\models\\viewmodels\\paymentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\models\\viewmodels\\planselectionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\models\\viewmodels\\planselectionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\models\\viewmodels\\policyviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\models\\viewmodels\\policyviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|c:\\project\\insurego_mvc\\insurego_mvc\\models\\viewmodels\\premiumviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\models\\viewmodels\\premiumviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|c:\\project\\insurego_mvc\\insurego_mvc\\models\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\models\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|c:\\project\\insurego_mvc\\insurego_mvc\\models\\viewmodels\\renewpolicyviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\models\\viewmodels\\renewpolicyviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\models\\viewmodels\\resetpasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\models\\viewmodels\\resetpasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\models\\viewmodels\\setclaimamountviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\models\\viewmodels\\setclaimamountviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\models\\viewmodels\\vehicleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\models\\viewmodels\\vehicleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\views\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\views\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\views\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\views\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\views\\admin\\approveclaim.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\views\\admin\\approveclaim.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\views\\admin\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\views\\admin\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\views\\admin\\setclaimamount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\views\\admin\\setclaimamount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\views\\claim\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\views\\claim\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\views\\home\\faq.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\views\\home\\faq.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\views\\home\\help.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\views\\home\\help.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\views\\vehicle\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\views\\vehicle\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|c:\\project\\insurego_mvc\\insurego_mvc\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\views\\policy\\ticket.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\views\\policy\\ticket.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\views\\payment\\paysuccess.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\views\\payment\\paysuccess.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\views\\payment\\pay.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\views\\payment\\pay.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\views\\payment\\makepayment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\views\\payment\\makepayment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\views\\insurance\\claimhistory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\views\\insurance\\claimhistory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\views\\insurance\\renew.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\views\\insurance\\renew.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\views\\insurance\\selectplan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\views\\insurance\\selectplan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\views\\premium\\calculate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\views\\premium\\calculate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|C:\\Project\\InsureGo_MVC\\insurego_mvc\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC7076DF-2CE7-47C6-B34A-1CC2FA37CF34}|InsureGo_MVC\\InsureGo_MVC.csproj|solutionrelative:insurego_mvc\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ControllerTestHelper.cs",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\UnitTest\\ControllerTestHelper.cs",
+              "RelativeDocumentMoniker": "UnitTest\\ControllerTestHelper.cs",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\UnitTest\\ControllerTestHelper.cs",
+              "RelativeToolTip": "UnitTest\\ControllerTestHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T16:04:36.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\UnitTest\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "UnitTest\\UnitTest1.cs",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\UnitTest\\UnitTest1.cs",
+              "RelativeToolTip": "UnitTest\\UnitTest1.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwEYAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T15:59:22.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Policy\\Details.cshtml",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Views\\Policy\\Details.cshtml",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Policy\\Details.cshtml",
+              "RelativeToolTip": "InsureGo_MVC\\Views\\Policy\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-24T15:27:33.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Landing\\Index.cshtml",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Views\\Landing\\Index.cshtml",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Landing\\Index.cshtml",
+              "RelativeToolTip": "InsureGo_MVC\\Views\\Landing\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-24T04:18:11.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "InsureGo_MVC\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAIwH4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T09:18:55.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "InsureGo_MVC\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAMgAAAAAAAAAAAAowD8BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-24T04:16:46.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PremiumController.cs",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Controllers\\PremiumController.cs",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Controllers\\PremiumController.cs",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Controllers\\PremiumController.cs",
+              "RelativeToolTip": "InsureGo_MVC\\Controllers\\PremiumController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T15:28:14.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LandingController.cs",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Controllers\\LandingController.cs",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Controllers\\LandingController.cs",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Controllers\\LandingController.cs",
+              "RelativeToolTip": "InsureGo_MVC\\Controllers\\LandingController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T15:27:18.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "InsureGo_MVC\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAQwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T09:45:49.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PolicyController.cs",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Controllers\\PolicyController.cs",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Controllers\\PolicyController.cs",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Controllers\\PolicyController.cs",
+              "RelativeToolTip": "InsureGo_MVC\\Controllers\\PolicyController.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAYwGIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T08:52:10.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "VehicleController.cs",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Controllers\\VehicleController.cs",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Controllers\\VehicleController.cs",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Controllers\\VehicleController.cs",
+              "RelativeToolTip": "InsureGo_MVC\\Controllers\\VehicleController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T09:09:17.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ClaimController.cs",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Controllers\\ClaimController.cs",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Controllers\\ClaimController.cs",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Controllers\\ClaimController.cs",
+              "RelativeToolTip": "InsureGo_MVC\\Controllers\\ClaimController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwDQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T10:04:44.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "InsureGo_MVC\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAkwGUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T08:54:01.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PaymentController.cs",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Controllers\\PaymentController.cs",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Controllers\\PaymentController.cs",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Controllers\\PaymentController.cs",
+              "RelativeToolTip": "InsureGo_MVC\\Controllers\\PaymentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-24T04:01:30.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AdminLoginViewModel.cs",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Models\\ViewModels\\AdminLoginViewModel.cs",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Models\\ViewModels\\AdminLoginViewModel.cs",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Models\\ViewModels\\AdminLoginViewModel.cs",
+              "RelativeToolTip": "InsureGo_MVC\\Models\\ViewModels\\AdminLoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T08:51:19.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "InsuranceController.cs",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Controllers\\InsuranceController.cs",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Controllers\\InsuranceController.cs",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Controllers\\InsuranceController.cs",
+              "RelativeToolTip": "InsureGo_MVC\\Controllers\\InsuranceController.cs",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAgwLcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T09:09:02.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ClaimInsuranceViewModel.cs",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Models\\ViewModels\\ClaimInsuranceViewModel.cs",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Models\\ViewModels\\ClaimInsuranceViewModel.cs",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Models\\ViewModels\\ClaimInsuranceViewModel.cs",
+              "RelativeToolTip": "InsureGo_MVC\\Models\\ViewModels\\ClaimInsuranceViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T10:18:56.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ClaimHistoryViewModel.cs",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Models\\ViewModels\\ClaimHistoryViewModel.cs",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Models\\ViewModels\\ClaimHistoryViewModel.cs",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Models\\ViewModels\\ClaimHistoryViewModel.cs",
+              "RelativeToolTip": "InsureGo_MVC\\Models\\ViewModels\\ClaimHistoryViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T07:45:26.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ForgetPasswordViewModel.cs",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Models\\ViewModels\\ForgetPasswordViewModel.cs",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Models\\ViewModels\\ForgetPasswordViewModel.cs",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Models\\ViewModels\\ForgetPasswordViewModel.cs",
+              "RelativeToolTip": "InsureGo_MVC\\Models\\ViewModels\\ForgetPasswordViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T09:19:07.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "HomeClaimViewModel.cs",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Models\\ViewModels\\HomeClaimViewModel.cs",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Models\\ViewModels\\HomeClaimViewModel.cs",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Models\\ViewModels\\HomeClaimViewModel.cs",
+              "RelativeToolTip": "InsureGo_MVC\\Models\\ViewModels\\HomeClaimViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T10:27:12.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "InsurancePlanViewModel.cs",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Models\\ViewModels\\InsurancePlanViewModel.cs",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Models\\ViewModels\\InsurancePlanViewModel.cs",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Models\\ViewModels\\InsurancePlanViewModel.cs",
+              "RelativeToolTip": "InsureGo_MVC\\Models\\ViewModels\\InsurancePlanViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T09:40:14.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "InsuranceViewModel.cs",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Models\\ViewModels\\InsuranceViewModel.cs",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Models\\ViewModels\\InsuranceViewModel.cs",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Models\\ViewModels\\InsuranceViewModel.cs",
+              "RelativeToolTip": "InsureGo_MVC\\Models\\ViewModels\\InsuranceViewModel.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAcwAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T09:40:16.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "LoginResponseViewModel.cs",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Models\\ViewModels\\LoginResponseViewModel.cs",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Models\\ViewModels\\LoginResponseViewModel.cs",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Models\\ViewModels\\LoginResponseViewModel.cs",
+              "RelativeToolTip": "InsureGo_MVC\\Models\\ViewModels\\LoginResponseViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T19:40:31.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Models\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Models\\ViewModels\\LoginViewModel.cs",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Models\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "InsureGo_MVC\\Models\\ViewModels\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T05:19:04.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "PaymentViewModel.cs",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Models\\ViewModels\\PaymentViewModel.cs",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Models\\ViewModels\\PaymentViewModel.cs",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Models\\ViewModels\\PaymentViewModel.cs",
+              "RelativeToolTip": "InsureGo_MVC\\Models\\ViewModels\\PaymentViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T09:45:33.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "PlanSelectionViewModel.cs",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Models\\ViewModels\\PlanSelectionViewModel.cs",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Models\\ViewModels\\PlanSelectionViewModel.cs",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Models\\ViewModels\\PlanSelectionViewModel.cs",
+              "RelativeToolTip": "InsureGo_MVC\\Models\\ViewModels\\PlanSelectionViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T05:32:31.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "PolicyViewModel.cs",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Models\\ViewModels\\PolicyViewModel.cs",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Models\\ViewModels\\PolicyViewModel.cs",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Models\\ViewModels\\PolicyViewModel.cs",
+              "RelativeToolTip": "InsureGo_MVC\\Models\\ViewModels\\PolicyViewModel.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAcwAYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-24T04:05:35.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "PremiumViewModel.cs",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Models\\ViewModels\\PremiumViewModel.cs",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Models\\ViewModels\\PremiumViewModel.cs",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Models\\ViewModels\\PremiumViewModel.cs",
+              "RelativeToolTip": "InsureGo_MVC\\Models\\ViewModels\\PremiumViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T15:04:08.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Models\\ViewModels\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Models\\ViewModels\\RegisterViewModel.cs",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Models\\ViewModels\\RegisterViewModel.cs",
+              "RelativeToolTip": "InsureGo_MVC\\Models\\ViewModels\\RegisterViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T15:18:25.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "RenewPolicyViewModel.cs",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Models\\ViewModels\\RenewPolicyViewModel.cs",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Models\\ViewModels\\RenewPolicyViewModel.cs",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Models\\ViewModels\\RenewPolicyViewModel.cs",
+              "RelativeToolTip": "InsureGo_MVC\\Models\\ViewModels\\RenewPolicyViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T15:18:23.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "VehicleViewModel.cs",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Models\\ViewModels\\VehicleViewModel.cs",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Models\\ViewModels\\VehicleViewModel.cs",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Models\\ViewModels\\VehicleViewModel.cs",
+              "RelativeToolTip": "InsureGo_MVC\\Models\\ViewModels\\VehicleViewModel.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA7wCUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T09:12:20.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ForgotPassword.cshtml",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Account\\ForgotPassword.cshtml",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Views\\Account\\ForgotPassword.cshtml",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Account\\ForgotPassword.cshtml",
+              "RelativeToolTip": "InsureGo_MVC\\Views\\Account\\ForgotPassword.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI0AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-24T04:14:35.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "InsureGo_MVC\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-26T09:19:12.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "InsureGo_MVC\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-25T17:18:21.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "SetClaimAmountViewModel.cs",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Models\\ViewModels\\SetClaimAmountViewModel.cs",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Models\\ViewModels\\SetClaimAmountViewModel.cs",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Models\\ViewModels\\SetClaimAmountViewModel.cs",
+              "RelativeToolTip": "InsureGo_MVC\\Models\\ViewModels\\SetClaimAmountViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T08:51:04.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ResetPasswordViewModel.cs",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Models\\ViewModels\\ResetPasswordViewModel.cs",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Models\\ViewModels\\ResetPasswordViewModel.cs",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Models\\ViewModels\\ResetPasswordViewModel.cs",
+              "RelativeToolTip": "InsureGo_MVC\\Models\\ViewModels\\ResetPasswordViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T05:38:22.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ResetPassword.cshtml",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Account\\ResetPassword.cshtml",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Views\\Account\\ResetPassword.cshtml",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Account\\ResetPassword.cshtml",
+              "RelativeToolTip": "InsureGo_MVC\\Views\\Account\\ResetPassword.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-25T05:25:38.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ApproveClaim.cshtml",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Admin\\ApproveClaim.cshtml",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Views\\Admin\\ApproveClaim.cshtml",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Admin\\ApproveClaim.cshtml",
+              "RelativeToolTip": "InsureGo_MVC\\Views\\Admin\\ApproveClaim.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-26T10:38:22.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Admin\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Views\\Admin\\Dashboard.cshtml",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Admin\\Dashboard.cshtml",
+              "RelativeToolTip": "InsureGo_MVC\\Views\\Admin\\Dashboard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAO0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-24T04:15:32.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Admin\\Login.cshtml",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Views\\Admin\\Login.cshtml",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Admin\\Login.cshtml",
+              "RelativeToolTip": "InsureGo_MVC\\Views\\Admin\\Login.cshtml",
+              "ViewState": "AgIAALcAAAAAAAAAAAAAAJ4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-25T05:07:23.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "SetClaimAmount.cshtml",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Admin\\SetClaimAmount.cshtml",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Views\\Admin\\SetClaimAmount.cshtml",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Admin\\SetClaimAmount.cshtml",
+              "RelativeToolTip": "InsureGo_MVC\\Views\\Admin\\SetClaimAmount.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-26T09:03:10.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Claim\\Create.cshtml",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Views\\Claim\\Create.cshtml",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Claim\\Create.cshtml",
+              "RelativeToolTip": "InsureGo_MVC\\Views\\Claim\\Create.cshtml",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAAAKYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-27T04:55:08.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Views\\Home\\About.cshtml",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "InsureGo_MVC\\Views\\Home\\About.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-24T10:23:12.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "FAQ.cshtml",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Home\\FAQ.cshtml",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Views\\Home\\FAQ.cshtml",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Home\\FAQ.cshtml",
+              "RelativeToolTip": "InsureGo_MVC\\Views\\Home\\FAQ.cshtml",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAAAJgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-24T10:24:41.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "InsureGo_MVC\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAFwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-24T10:25:02.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Help.cshtml",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Home\\Help.cshtml",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Views\\Home\\Help.cshtml",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Home\\Help.cshtml",
+              "RelativeToolTip": "InsureGo_MVC\\Views\\Home\\Help.cshtml",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAAAK0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-24T10:24:17.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Vehicle\\Add.cshtml",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Views\\Vehicle\\Add.cshtml",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Vehicle\\Add.cshtml",
+              "RelativeToolTip": "InsureGo_MVC\\Views\\Vehicle\\Add.cshtml",
+              "ViewState": "AgIAAK0AAAAAAAAAAAAAALkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-24T04:18:47.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "InsureGo_MVC\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-28T15:12:53.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Ticket.cshtml",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Policy\\Ticket.cshtml",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Views\\Policy\\Ticket.cshtml",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Policy\\Ticket.cshtml",
+              "RelativeToolTip": "InsureGo_MVC\\Views\\Policy\\Ticket.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIYAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-26T09:42:16.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "PaySuccess.cshtml",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Payment\\PaySuccess.cshtml",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Views\\Payment\\PaySuccess.cshtml",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Payment\\PaySuccess.cshtml",
+              "RelativeToolTip": "InsureGo_MVC\\Views\\Payment\\PaySuccess.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-24T11:15:43.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Pay.cshtml",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Payment\\Pay.cshtml",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Views\\Payment\\Pay.cshtml",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Payment\\Pay.cshtml",
+              "RelativeToolTip": "InsureGo_MVC\\Views\\Payment\\Pay.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-28T12:34:30.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "MakePayment.cshtml",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Payment\\MakePayment.cshtml",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Views\\Payment\\MakePayment.cshtml",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Payment\\MakePayment.cshtml",
+              "RelativeToolTip": "InsureGo_MVC\\Views\\Payment\\MakePayment.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-28T12:34:22.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "InsureGo_MVC\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-24T10:08:35.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "ClaimHistory.cshtml",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Insurance\\ClaimHistory.cshtml",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Views\\Insurance\\ClaimHistory.cshtml",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Insurance\\ClaimHistory.cshtml",
+              "RelativeToolTip": "InsureGo_MVC\\Views\\Insurance\\ClaimHistory.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJMAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-28T08:05:14.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "Renew.cshtml",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Insurance\\Renew.cshtml",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Views\\Insurance\\Renew.cshtml",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Insurance\\Renew.cshtml",
+              "RelativeToolTip": "InsureGo_MVC\\Views\\Insurance\\Renew.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-28T12:33:42.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "SelectPlan.cshtml",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Insurance\\SelectPlan.cshtml",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Views\\Insurance\\SelectPlan.cshtml",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Insurance\\SelectPlan.cshtml",
+              "RelativeToolTip": "InsureGo_MVC\\Views\\Insurance\\SelectPlan.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-24T04:17:29.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "Calculate.cshtml",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Premium\\Calculate.cshtml",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\Views\\Premium\\Calculate.cshtml",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\Views\\Premium\\Calculate.cshtml",
+              "RelativeToolTip": "InsureGo_MVC\\Views\\Premium\\Calculate.cshtml",
+              "ViewState": "AgIAAMoAAAAAAAAAAAAmwPAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-24T15:51:03.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "InsureGo_MVC\\App_Start\\RouteConfig.cs",
+              "ToolTip": "C:\\Project\\InsureGo_MVC\\InsureGo_MVC\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "InsureGo_MVC\\App_Start\\RouteConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T08:58:29.286Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

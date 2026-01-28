@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Payment";
+}
+
+<h2>Payment</h2>
+<p>Vehicle and plan selected. Redirect to payment gateway.</p>
+
+<script type="text/javascript">
+    window.onload = function () {
+        alert("Payment process started. Redirecting to gateway...");
+
+        window.location.href = '@Url.Action("Index", "Home")';
+    };
+</script>

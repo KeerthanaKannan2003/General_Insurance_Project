@@ -1,0 +1,122 @@
+﻿@model InsureGo_MVC.Models.ViewModels.InsuranceViewModel
+
+@{
+    ViewBag.Title = "Select Insurance Plan";
+}
+<style>
+    body {
+        background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+        font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    .form-wrapper {
+        max-width: 620px;
+        margin: 50px auto;
+        background: #ffffff;
+        border-radius: 16px;
+        padding: 32px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+
+    .form-heading {
+        font-size: 26px;
+        font-weight: 700;
+        color: #1a237e;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .form-group {
+        margin-bottom: 18px;
+    }
+
+        .form-group label {
+            font-size: 14px;
+            font-weight: 600;
+            color: #37474f;
+            margin-bottom: 6px;
+            display: block;
+            padding-left: 4px;
+        }
+
+    .form-control {
+        width: 100%;
+        padding: 12px 16px;
+        font-size: 15px;
+        border-radius: 999px;
+        border: 1px solid #cfd8dc;
+        background: #f9fbff;
+        transition: all 0.25s ease;
+    }
+
+        .form-control:focus {
+            outline: none;
+            border-color: #1e88e5;
+            box-shadow: 0 0 0 3px rgba(30,136,229,0.25);
+            background: #fff;
+        }
+
+    .btn-success {
+        width: 20%;
+        padding: 12px;
+        border-radius: 999px;
+        border: none;
+        font-weight: 600;
+        background: linear-gradient(90deg, #1e88e5, #3949ab);
+        color: #fff;
+        box-shadow: 0 6px 16px rgba(30,136,229,0.3);
+    }
+
+        .btn-success:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(30,136,229,0.4);
+        }
+</style>
+
+
+<div class="container mt-5">
+    <h2>Select Insurance Plan</h2>
+
+    @if (ViewBag.Error != null)
+    {
+        <div class="alert alert-danger">@ViewBag.Error</div>
+    }
+
+    @using (Html.BeginForm("SelectPlan", "Insurance", FormMethod.Post, new { @class = "form-horizontal" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.VehicleType)
+            @Html.TextBoxFor(m => m.VehicleType, new { @class = "form-control", @readonly = "readonly" })
+        </div>
+
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.VehicleModel)
+            @Html.TextBoxFor(m => m.VehicleModel, new { @class = "form-control", @readonly = "readonly" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.RegistrationNumber)
+            @Html.TextBoxFor(m => m.RegistrationNumber, new { @class = "form-control", @readonly = "readonly" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.PlanId, "Select Plan")
+            @Html.DropDownListFor(m => m.PlanId,
+                     new SelectList(ViewBag.Plans ?? new List<InsureGo_MVC.Models.ViewModels.InsurancePlanViewModel>(), "PlanId", "PlanName"),
+                     "Select Plan",
+                     new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.PlanId, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.DurationYears)
+            @Html.TextBoxFor(m => m.DurationYears, new { @class = "form-control", type = "number", min = "1", max = "5" })
+            @Html.ValidationMessageFor(m => m.DurationYears, "", new { @class = "text-danger" })
+        </div>
+
+        <button type="submit" class="btn btn-success">Next: Payment</button>
+    }
+</div>
