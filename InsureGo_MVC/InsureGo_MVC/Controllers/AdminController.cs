@@ -134,7 +134,6 @@ namespace InsureGo_MVC.Controllers
                 }
             }
         }
-
         public ActionResult Logout()
         {
             Session.Clear();

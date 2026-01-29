@@ -1,65 +1,77 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Project\\InsureGo\\",
+  "WorkspaceRootPath": "C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|C:\\Project\\InsureGo\\insurego_api\\controllers\\accountapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|solutionrelative:insurego_api\\controllers\\accountapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|C:\\Project\\InsureGo\\insurego_api\\repository\\insurancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|solutionrelative:insurego_api\\repository\\insurancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|C:\\Project\\InsureGo\\insurego_api\\repository\\iinsurancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|solutionrelative:insurego_api\\repository\\iinsurancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|C:\\Project\\InsureGo\\insurego_api\\repository\\claimviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|solutionrelative:insurego_api\\repository\\claimviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|c:\\project\\insurego\\insurego_api\\controllers\\vehicleapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|solutionrelative:insurego_api\\controllers\\vehicleapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|c:\\project\\insurego\\insurego_api\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|solutionrelative:insurego_api\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|C:\\Project\\InsureGo\\insurego_api\\controllers\\policyviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|solutionrelative:insurego_api\\controllers\\policyviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|c:\\project\\insurego\\insurego_api\\controllers\\policyapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|solutionrelative:insurego_api\\controllers\\policyapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|C:\\Project\\InsureGo\\insurego_api\\controllers\\adminapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|solutionrelative:insurego_api\\controllers\\adminapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|C:\\Project\\InsureGo\\insurego_api\\controllers\\claimapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\insurego_api\\controllers\\claimapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|solutionrelative:insurego_api\\controllers\\claimapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|C:\\Project\\InsureGo\\insurego_api\\models\\claimhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\insurego_api\\controllers\\adminapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|solutionrelative:insurego_api\\controllers\\adminapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\insurego_api\\controllers\\accountapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|solutionrelative:insurego_api\\controllers\\accountapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\insurego_api\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|solutionrelative:insurego_api\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\insurego_api\\repository\\iinsurancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|solutionrelative:insurego_api\\repository\\iinsurancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|c:\\users\\keerthanak\\desktop\\project\\insurego\\insurego_api\\repository\\claimviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|solutionrelative:insurego_api\\repository\\claimviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\insurego_api\\controllers\\vehicleapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|solutionrelative:insurego_api\\controllers\\vehicleapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\insurego_api\\controllers\\premiumapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|solutionrelative:insurego_api\\controllers\\premiumapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\insurego_api\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|solutionrelative:insurego_api\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\insurego_api\\controllers\\policyviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|solutionrelative:insurego_api\\controllers\\policyviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\insurego_api\\controllers\\policyapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|solutionrelative:insurego_api\\controllers\\policyapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\insurego_api\\controllers\\paymentapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|solutionrelative:insurego_api\\controllers\\paymentapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\insurego_api\\repository\\insurancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|solutionrelative:insurego_api\\repository\\insurancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\insurego_api\\models\\claimhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|solutionrelative:insurego_api\\models\\claimhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|C:\\Project\\InsureGo\\insurego_api\\models\\policyduration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\insurego_api\\models\\policyduration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|solutionrelative:insurego_api\\models\\policyduration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|C:\\Project\\InsureGo\\insurego_api\\models\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\insurego_api\\models\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|solutionrelative:insurego_api\\models\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|C:\\Project\\InsureGo\\insurego_api\\models\\vehicletype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\insurego_api\\models\\vehicletype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|solutionrelative:insurego_api\\models\\vehicletype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|C:\\Project\\InsureGo\\insurego_api\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\insurego_api\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26551277-99B3-4990-BBBF-785F99C89B75}|InsureGo_API\\InsureGo_API.csproj|solutionrelative:insurego_api\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -73,7 +85,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -85,54 +97,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "VehicleApiController.cs",
-              "DocumentMoniker": "C:\\Project\\InsureGo\\InsureGo_API\\Controllers\\VehicleApiController.cs",
-              "RelativeDocumentMoniker": "InsureGo_API\\Controllers\\VehicleApiController.cs",
-              "ToolTip": "C:\\Project\\InsureGo\\InsureGo_API\\Controllers\\VehicleApiController.cs",
-              "RelativeToolTip": "InsureGo_API\\Controllers\\VehicleApiController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T15:42:56.06Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ClaimViewModel.cs",
-              "DocumentMoniker": "C:\\Project\\InsureGo\\InsureGo_API\\Repository\\ClaimViewModel.cs",
-              "RelativeDocumentMoniker": "InsureGo_API\\Repository\\ClaimViewModel.cs",
-              "ToolTip": "C:\\Project\\InsureGo\\InsureGo_API\\Repository\\ClaimViewModel.cs",
-              "RelativeToolTip": "InsureGo_API\\Repository\\ClaimViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T05:09:20.928Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "AccountApiController.cs",
+              "DocumentMoniker": "C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\InsureGo_API\\Controllers\\AccountApiController.cs",
+              "RelativeDocumentMoniker": "InsureGo_API\\Controllers\\AccountApiController.cs",
+              "ToolTip": "C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\InsureGo_API\\Controllers\\AccountApiController.cs",
+              "RelativeToolTip": "InsureGo_API\\Controllers\\AccountApiController.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAYwD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T09:22:59.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminApiController.cs",
+              "DocumentMoniker": "C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\InsureGo_API\\Controllers\\AdminApiController.cs",
+              "RelativeDocumentMoniker": "InsureGo_API\\Controllers\\AdminApiController.cs",
+              "ToolTip": "C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\InsureGo_API\\Controllers\\AdminApiController.cs",
+              "RelativeToolTip": "InsureGo_API\\Controllers\\AdminApiController.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAAwBYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T08:47:08.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "IInsuranceRepository.cs",
-              "DocumentMoniker": "C:\\Project\\InsureGo\\InsureGo_API\\Repository\\IInsuranceRepository.cs",
+              "DocumentMoniker": "C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\InsureGo_API\\Repository\\IInsuranceRepository.cs",
               "RelativeDocumentMoniker": "InsureGo_API\\Repository\\IInsuranceRepository.cs",
-              "ToolTip": "C:\\Project\\InsureGo\\InsureGo_API\\Repository\\IInsuranceRepository.cs",
+              "ToolTip": "C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\InsureGo_API\\Repository\\IInsuranceRepository.cs",
               "RelativeToolTip": "InsureGo_API\\Repository\\IInsuranceRepository.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAswCYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAA/wCMAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-25T14:32:11.769Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "InsuranceRepository.cs",
-              "DocumentMoniker": "C:\\Project\\InsureGo\\InsureGo_API\\Repository\\InsuranceRepository.cs",
-              "RelativeDocumentMoniker": "InsureGo_API\\Repository\\InsuranceRepository.cs",
-              "ToolTip": "C:\\Project\\InsureGo\\InsureGo_API\\Repository\\InsuranceRepository.cs",
-              "RelativeToolTip": "InsureGo_API\\Repository\\InsuranceRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIIAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\InsureGo_API\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "InsureGo_API\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\InsureGo_API\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "InsureGo_API\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwDkAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-26T09:23:45.516Z",
+              "WhenOpened": "2026-01-28T16:46:30.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClaimApiController.cs",
+              "DocumentMoniker": "C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\InsureGo_API\\Controllers\\ClaimApiController.cs",
+              "RelativeDocumentMoniker": "InsureGo_API\\Controllers\\ClaimApiController.cs",
+              "ToolTip": "C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\InsureGo_API\\Controllers\\ClaimApiController.cs",
+              "RelativeToolTip": "InsureGo_API\\Controllers\\ClaimApiController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwGgAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-25T14:29:20.819Z",
               "EditorCaption": ""
             },
             {
@@ -141,87 +166,108 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AccountApiController.cs",
-              "DocumentMoniker": "C:\\Project\\InsureGo\\InsureGo_API\\Controllers\\AccountApiController.cs",
-              "RelativeDocumentMoniker": "InsureGo_API\\Controllers\\AccountApiController.cs",
-              "ToolTip": "C:\\Project\\InsureGo\\InsureGo_API\\Controllers\\AccountApiController.cs",
-              "RelativeToolTip": "InsureGo_API\\Controllers\\AccountApiController.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAgwGQAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-26T09:22:59.852Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "ValuesController.cs",
-              "DocumentMoniker": "C:\\Project\\InsureGo\\InsureGo_API\\Controllers\\ValuesController.cs",
-              "RelativeDocumentMoniker": "InsureGo_API\\Controllers\\ValuesController.cs",
-              "ToolTip": "C:\\Project\\InsureGo\\InsureGo_API\\Controllers\\ValuesController.cs",
-              "RelativeToolTip": "InsureGo_API\\Controllers\\ValuesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAhAAAAAAAAAA==",
+              "Title": "ClaimViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\InsureGo_API\\Repository\\ClaimViewModel.cs",
+              "RelativeDocumentMoniker": "InsureGo_API\\Repository\\ClaimViewModel.cs",
+              "ToolTip": "C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\InsureGo_API\\Repository\\ClaimViewModel.cs",
+              "RelativeToolTip": "InsureGo_API\\Repository\\ClaimViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T15:41:53.984Z",
+              "WhenOpened": "2026-01-28T05:09:20.928Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "PolicyViewModel.cs",
-              "DocumentMoniker": "C:\\Project\\InsureGo\\InsureGo_API\\Controllers\\PolicyViewModel.cs",
-              "RelativeDocumentMoniker": "InsureGo_API\\Controllers\\PolicyViewModel.cs",
-              "ToolTip": "C:\\Project\\InsureGo\\InsureGo_API\\Controllers\\PolicyViewModel.cs",
-              "RelativeToolTip": "InsureGo_API\\Controllers\\PolicyViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "VehicleApiController.cs",
+              "DocumentMoniker": "C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\InsureGo_API\\Controllers\\VehicleApiController.cs",
+              "RelativeDocumentMoniker": "InsureGo_API\\Controllers\\VehicleApiController.cs",
+              "ToolTip": "C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\InsureGo_API\\Controllers\\VehicleApiController.cs",
+              "RelativeToolTip": "InsureGo_API\\Controllers\\VehicleApiController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T04:49:10.689Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PolicyApiController.cs",
-              "DocumentMoniker": "C:\\Project\\InsureGo\\InsureGo_API\\Controllers\\PolicyApiController.cs",
-              "RelativeDocumentMoniker": "InsureGo_API\\Controllers\\PolicyApiController.cs",
-              "ToolTip": "C:\\Project\\InsureGo\\InsureGo_API\\Controllers\\PolicyApiController.cs",
-              "RelativeToolTip": "InsureGo_API\\Controllers\\PolicyApiController.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAgwBEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-26T08:48:31.242Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-28T15:42:56.06Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "ClaimApiController.cs",
-              "DocumentMoniker": "C:\\Project\\InsureGo\\InsureGo_API\\Controllers\\ClaimApiController.cs",
-              "RelativeDocumentMoniker": "InsureGo_API\\Controllers\\ClaimApiController.cs",
-              "ToolTip": "C:\\Project\\InsureGo\\InsureGo_API\\Controllers\\ClaimApiController.cs",
-              "RelativeToolTip": "InsureGo_API\\Controllers\\ClaimApiController.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAQwDYAAAAAAAAAAAAAAA==",
+              "Title": "PolicyViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\InsureGo_API\\Controllers\\PolicyViewModel.cs",
+              "RelativeDocumentMoniker": "InsureGo_API\\Controllers\\PolicyViewModel.cs",
+              "ToolTip": "C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\InsureGo_API\\Controllers\\PolicyViewModel.cs",
+              "RelativeToolTip": "InsureGo_API\\Controllers\\PolicyViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T14:29:20.819Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AdminApiController.cs",
-              "DocumentMoniker": "C:\\Project\\InsureGo\\InsureGo_API\\Controllers\\AdminApiController.cs",
-              "RelativeDocumentMoniker": "InsureGo_API\\Controllers\\AdminApiController.cs",
-              "ToolTip": "C:\\Project\\InsureGo\\InsureGo_API\\Controllers\\AdminApiController.cs",
-              "RelativeToolTip": "InsureGo_API\\Controllers\\AdminApiController.cs",
-              "ViewState": "AgIAAG4AAAAAAAAAAAAgwF4AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-26T08:47:08.261Z"
+              "WhenOpened": "2026-01-28T04:49:10.689Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "PolicyApiController.cs",
+              "DocumentMoniker": "C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\InsureGo_API\\Controllers\\PolicyApiController.cs",
+              "RelativeDocumentMoniker": "InsureGo_API\\Controllers\\PolicyApiController.cs",
+              "ToolTip": "C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\InsureGo_API\\Controllers\\PolicyApiController.cs",
+              "RelativeToolTip": "InsureGo_API\\Controllers\\PolicyApiController.cs",
+              "ViewState": "AgIAAOcAAAAAAAAAAAAIwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T08:48:31.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PaymentApiController.cs",
+              "DocumentMoniker": "C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\InsureGo_API\\Controllers\\PaymentApiController.cs",
+              "RelativeDocumentMoniker": "InsureGo_API\\Controllers\\PaymentApiController.cs",
+              "ToolTip": "C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\InsureGo_API\\Controllers\\PaymentApiController.cs",
+              "RelativeToolTip": "InsureGo_API\\Controllers\\PaymentApiController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T16:47:01.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PremiumApiController.cs",
+              "DocumentMoniker": "C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\InsureGo_API\\Controllers\\PremiumApiController.cs",
+              "RelativeDocumentMoniker": "InsureGo_API\\Controllers\\PremiumApiController.cs",
+              "ToolTip": "C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\InsureGo_API\\Controllers\\PremiumApiController.cs",
+              "RelativeToolTip": "InsureGo_API\\Controllers\\PremiumApiController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T16:47:15.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ValuesController.cs",
+              "DocumentMoniker": "C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\InsureGo_API\\Controllers\\ValuesController.cs",
+              "RelativeDocumentMoniker": "InsureGo_API\\Controllers\\ValuesController.cs",
+              "ToolTip": "C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\InsureGo_API\\Controllers\\ValuesController.cs",
+              "RelativeToolTip": "InsureGo_API\\Controllers\\ValuesController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAABAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T15:41:53.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "InsuranceRepository.cs",
+              "DocumentMoniker": "C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\InsureGo_API\\Repository\\InsuranceRepository.cs",
+              "RelativeDocumentMoniker": "InsureGo_API\\Repository\\InsuranceRepository.cs",
+              "ToolTip": "C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\InsureGo_API\\Repository\\InsuranceRepository.cs",
+              "RelativeToolTip": "InsureGo_API\\Repository\\InsuranceRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T09:23:45.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "ClaimHistory.cs",
-              "DocumentMoniker": "C:\\Project\\InsureGo\\InsureGo_API\\Models\\ClaimHistory.cs",
+              "DocumentMoniker": "C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\InsureGo_API\\Models\\ClaimHistory.cs",
               "RelativeDocumentMoniker": "InsureGo_API\\Models\\ClaimHistory.cs",
-              "ToolTip": "C:\\Project\\InsureGo\\InsureGo_API\\Models\\ClaimHistory.cs",
+              "ToolTip": "C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\InsureGo_API\\Models\\ClaimHistory.cs",
               "RelativeToolTip": "InsureGo_API\\Models\\ClaimHistory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -229,11 +275,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "PolicyDuration.cs",
-              "DocumentMoniker": "C:\\Project\\InsureGo\\InsureGo_API\\Models\\PolicyDuration.cs",
+              "DocumentMoniker": "C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\InsureGo_API\\Models\\PolicyDuration.cs",
               "RelativeDocumentMoniker": "InsureGo_API\\Models\\PolicyDuration.cs",
-              "ToolTip": "C:\\Project\\InsureGo\\InsureGo_API\\Models\\PolicyDuration.cs",
+              "ToolTip": "C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\InsureGo_API\\Models\\PolicyDuration.cs",
               "RelativeToolTip": "InsureGo_API\\Models\\PolicyDuration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -241,11 +287,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "Vehicle.cs",
-              "DocumentMoniker": "C:\\Project\\InsureGo\\InsureGo_API\\Models\\Vehicle.cs",
+              "DocumentMoniker": "C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\InsureGo_API\\Models\\Vehicle.cs",
               "RelativeDocumentMoniker": "InsureGo_API\\Models\\Vehicle.cs",
-              "ToolTip": "C:\\Project\\InsureGo\\InsureGo_API\\Models\\Vehicle.cs",
+              "ToolTip": "C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\InsureGo_API\\Models\\Vehicle.cs",
               "RelativeToolTip": "InsureGo_API\\Models\\Vehicle.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAIwBwAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -253,11 +299,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "VehicleType.cs",
-              "DocumentMoniker": "C:\\Project\\InsureGo\\InsureGo_API\\Models\\VehicleType.cs",
+              "DocumentMoniker": "C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\InsureGo_API\\Models\\VehicleType.cs",
               "RelativeDocumentMoniker": "InsureGo_API\\Models\\VehicleType.cs",
-              "ToolTip": "C:\\Project\\InsureGo\\InsureGo_API\\Models\\VehicleType.cs",
+              "ToolTip": "C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\InsureGo_API\\Models\\VehicleType.cs",
               "RelativeToolTip": "InsureGo_API\\Models\\VehicleType.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -265,11 +311,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "Global.asax.cs",
-              "DocumentMoniker": "C:\\Project\\InsureGo\\InsureGo_API\\Global.asax.cs",
+              "DocumentMoniker": "C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\InsureGo_API\\Global.asax.cs",
               "RelativeDocumentMoniker": "InsureGo_API\\Global.asax.cs",
-              "ToolTip": "C:\\Project\\InsureGo\\InsureGo_API\\Global.asax.cs",
+              "ToolTip": "C:\\Users\\keerthanak\\Desktop\\Project\\InsureGo\\InsureGo_API\\Global.asax.cs",
               "RelativeToolTip": "InsureGo_API\\Global.asax.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -277,12 +323,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "InsuranceController.cs",
               "DocumentMoniker": "C:\\Users\\kanishkac\\Downloads\\Final-Project\\InsureGo\\InsureGo_API\\Controllers\\InsuranceController.cs",
-              "RelativeDocumentMoniker": "..\\..\\Users\\kanishkac\\Downloads\\Final-Project\\InsureGo\\InsureGo_API\\Controllers\\InsuranceController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\kanishkac\\Downloads\\Final-Project\\InsureGo\\InsureGo_API\\Controllers\\InsuranceController.cs",
               "ToolTip": "C:\\Users\\kanishkac\\Downloads\\Final-Project\\InsureGo\\InsureGo_API\\Controllers\\InsuranceController.cs",
-              "RelativeToolTip": "..\\..\\Users\\kanishkac\\Downloads\\Final-Project\\InsureGo\\InsureGo_API\\Controllers\\InsuranceController.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\kanishkac\\Downloads\\Final-Project\\InsureGo\\InsureGo_API\\Controllers\\InsuranceController.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-25T15:55:31.987Z"
             }

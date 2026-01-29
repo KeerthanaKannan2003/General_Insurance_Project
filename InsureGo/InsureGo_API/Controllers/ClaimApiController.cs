@@ -55,7 +55,7 @@ namespace InsureGo_API.Controllers
 
 
 
-        // APPROVE CLAIM
+    /*    // APPROVE CLAIM
         [HttpPost]
         [Route("approve")]
         public IHttpActionResult ApproveClaim([FromBody] dynamic data)
@@ -102,6 +102,6 @@ namespace InsureGo_API.Controllers
         {
             int count = repo.GetPendingClaimsCount();
             return Ok(count);
-        }
+        }*/
     }
 }

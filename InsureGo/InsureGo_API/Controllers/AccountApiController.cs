@@ -126,7 +126,7 @@ namespace InsureGo_API.Api.Controllers
 
         }
 
-        // ================= HASH FUNCTION =================
+        // HASH FUNCTION 
 
         private string HashPassword(string password)
 
